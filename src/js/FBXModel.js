@@ -1,5 +1,5 @@
 // src/js/FBXModel.js
-import React, { useEffect, useRef } from 'react';
+/*import React, { useEffect, useRef } from 'react';
 import { useLoader } from '@react-three/fiber';
 import { FBXLoader } from 'three/examples/jsm/loaders/FBXLoader';
 
@@ -17,4 +17,4 @@ const FBXModel = () => {
   return <primitive object={fbx} ref={ref} />;
 };
 
-export default FBXModel;
+export default FBXModel;*/

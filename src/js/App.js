@@ -1,14 +1,13 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import FbxViewer from '../js/FbxViewer';
+//import FbxViewer from '../js/FbxViewer';
 import Test from '../js/Test.js'
 
 function App() {
   return (
     <Router>
       <Routes>
-      <Route path="/fbx" element={<FbxViewer />} />
       <Route path="/" element={<Test />} />
         {/* other routes here */}
       </Routes>
