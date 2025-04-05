@@ -1,5 +1,5 @@
 // src/js/FbxViewer.js
-/*import React, { Suspense } from 'react';
+import React, { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
 import FBXModel from './FBXModel';
@@ -19,4 +19,4 @@ const FbxViewer = () => {
   );
 };
 
-export default FbxViewer;*/
+export default FbxViewer;
