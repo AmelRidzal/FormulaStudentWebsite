@@ -1,7 +1,7 @@
 import React from 'react';
 import '../css/Default.css';
 import UpdateCard from './UpdateCard';
-import '../css/Updates.css';
+import '../css/News.css';
 import TeamPic from '../assets/TeamPic.jpg'
 
 const slides = [

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/Updates.css';
+import '../css/News.css';
 
 function UpdateCard({ image, title, date, description }) {
   return (
