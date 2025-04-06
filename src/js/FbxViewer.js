@@ -1,25 +1,41 @@
 // src/js/FbxViewer.js
-import React from 'react';
-
+import React, { useState, Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { useGLTF, Stage, PresentationControls } from '@react-three/drei';
 
-function Model(props){
-  const { scene } = useGLTF("/FBXTest.glb")
-  return <primitive object={scene}{...props} />
+import '../css/FBXViewer.css';
+
+function Model({ modelPath }) {
+  const { scene } = useGLTF(modelPath);
+  return <primitive object={scene} scale={0.01} />;
 }
 
 const FbxViewer = () => {
+  const [model, setModel] = useState('/models/FBXTest.glb'); // default model path
+
   return (
-    <Canvas dpr={[1,2]} shadows camera={{fov:45}} style={{"position":"absolute"}}>
-      <color attach="background" args={["#101010"]}>
-      </color>
-      <PresentationControls speed={1.5} global zoom={.5} polar={[-0.1, Math.PI/4]}>
-      <Stage environment={'sunset'}>
-        <Model scale={0.01}></Model>
-      </Stage>
-      </PresentationControls>
-    </Canvas>
+    <>
+      {/* Custom Navbar */}
+      <nav className="navbar">
+        <ul className="nav-links">
+          <li><button onClick={() => setModel('/models/FBXTest.glb')}>Engine</button></li>
+          <li><button onClick={() => setModel('/models/FBXTest1.glb')}>Chassie</button></li>
+          <li><button onClick={() => setModel('/models/FBXTest.glb')}>Aero</button></li>
+        </ul>
+      </nav>
+
+      {/* 3D Canvas */}
+      <Canvas dpr={[1, 2]} shadows camera={{ fov: 45 }} style={{ position: "absolute"}}>
+        <color attach="background" args={["#101010"]} />
+        <Suspense fallback={null}>
+          <PresentationControls speed={1.5} global zoom={0.5} >
+            <Stage environment="sunset">
+              <Model modelPath={model} />
+            </Stage>
+          </PresentationControls>
+        </Suspense>
+      </Canvas>
+    </>
   );
 };
 
