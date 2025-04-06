@@ -5,6 +5,7 @@ import FbxViewer from '../js/FbxViewer';
 import Default from './Default.js'
 import Picturs from './Picturs.js'
 import Update from './Updates.js'
+import Sponsors from './Sponsors.jsx'
 
 import Navbar from './Navbar';
 
@@ -18,6 +19,7 @@ function App() {
       <Route path="/pics" element={<Picturs />} />
       <Route path="/upd" element={<Update />} />
         {/* other routes here */}
+      <Route path="/sponsors" element={<Sponsors />} />
       </Routes>
     </Router>
   );
