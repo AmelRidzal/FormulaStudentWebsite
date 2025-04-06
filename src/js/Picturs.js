@@ -5,7 +5,7 @@ const Pictures = () => {
   const [images, setImages] = useState([]);
 
   useEffect(() => {
-    fetch('/api/images')  // ✅ fixed route
+    fetch('/api/images')  
       .then(res => res.json())
       .then(data => {
         if (Array.isArray(data)) {

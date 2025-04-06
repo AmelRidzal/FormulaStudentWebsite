@@ -2,10 +2,11 @@ import React from 'react';
 import '../css/Default.css';
 import UpdateCard from './UpdateCard';
 import '../css/updates.css';
+import TeamPic from '../assets/TeamPic.jpg'
 
 const slides = [
   {
-    image: 'https://pbs.twimg.com/media/FYvVUxBXwAEHu4l.jpg:large', 
+    image: 'https://pbs.twimg.com/media/FYvVUxBXwAEHu4l.jpg:large',
     title: 'UNSA RACING FORMULA TEAM',
     subtitle: 'Motorsport in its purest form'
   },
@@ -39,25 +40,25 @@ function Home() {
     <div className="App">
       <main>
         <section id="landing-section">
-        {slides.map((slide, index) => (
-        <div className="slide" key={index}>
-          <img src={slide.image} alt={`Slide ${index}`} />
-          <div className="overlay">
-            <h1>{slide.title}</h1>
-            <p>{slide.subtitle}</p>
-            <div className="social-icons">
-              <i className="fab fa-instagram" />
-              <i className="fab fa-linkedin" />
-              <i className="fab fa-youtube" />
-              <i className="fab fa-facebook" />
-            </div>          
-          </div>
-        </div>
-        ))}
+          {slides.map((slide, index) => (
+            <div className="slide" key={index}>
+              <img src={slide.image} alt={`Slide ${index}`} />
+              <div className="overlay">
+                <h1>{slide.title}</h1>
+                <p>{slide.subtitle}</p>
+                <div className="social-icons">
+                  <i className="fab fa-instagram" />
+                  <i className="fab fa-linkedin" />
+                  <i className="fab fa-youtube" />
+                  <i className="fab fa-facebook" />
+                </div>
+              </div>
+            </div>
+          ))}
         </section>
         <section className="about-section">
           <div className="image-container">
-            <img src="https://www.estacaformulateam.com/wp-content/uploads/2024/12/20240803_FSS_TEAM_KKoloczek_073-1-1536x1152.jpg" alt="Seagulls Lübeck Team" />
+            <img src={TeamPic} />
           </div>
           <div className="text-container">
             <h3 className="subtitle">University of Sarajevo</h3>
@@ -72,149 +73,213 @@ function Home() {
             </a>
           </div>
         </section>
-        
+
         <section id="sponsors-section">
           <h2 className="sponsors-title">Our Sponsors</h2>
           <div class="sponsor-slider-wrapper">
             <div class="sponsor-slider slide-1">
               <div class="item">
                 <a href="#">
-                  <img src="https://www.pngarts.com/files/3/Logo-PNG-Image-Background.png" alt="img"/>
+                  <img src="https://www.pngarts.com/files/3/Logo-PNG-Image-Background.png" alt="img" />
                 </a>
               </div>
               <div class="item">
                 <a href="#">
-                  <img src="https://logodownload.org/wp-content/uploads/2020/10/garena-logo.png" alt="img"/>
+                  <img src="https://logodownload.org/wp-content/uploads/2020/10/garena-logo.png" alt="img" />
                 </a>
               </div>
               <div class="item">
                 <a href="#">
-                  <img src="https://pngimg.com/uploads/nike/nike_PNG12.png" alt="img"/>
+                  <img src="https://pngimg.com/uploads/nike/nike_PNG12.png" alt="img" />
                 </a>
               </div>
               <div class="item">
                 <a href="#">
-                  <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_CMYK_Green.png" alt="img"/>
+                  <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_CMYK_Green.png" alt="img" />
                 </a>
               </div>
               <div class="item">
                 <a href="#">
-                  <img src="http://assets.stickpng.com/images/585990234f6ae202fedf28cf.png" alt="img"/>
+                  <img src="http://assets.stickpng.com/images/585990234f6ae202fedf28cf.png" alt="img" />
                 </a>
               </div>
               <div class="item">
                 <a href="#">
-                  <img src="https://logos-world.net/wp-content/uploads/2021/02/Sky-Logo.png" alt="img"/>
+                  <img src="https://logos-world.net/wp-content/uploads/2021/02/Sky-Logo.png" alt="img" />
                 </a>
               </div>
               <div class="item">
                 <a href="#">
-                  <img src="https://purepng.com/public/uploads/large/purepng.com-disney-logologobrand-logoiconslogos-251519939495wtv86.png" alt="img"/>
+                  <img src="https://purepng.com/public/uploads/large/purepng.com-disney-logologobrand-logoiconslogos-251519939495wtv86.png" alt="img" />
                 </a>
               </div>
               <div class="item">
                 <a href="#">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/7/75/Arena_of_Valor_logo.png" alt="img"/>
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/7/75/Arena_of_Valor_logo.png" alt="img" />
                 </a>
               </div>
               <div class="item">
                 <a href="#">
-                  <img src="https://www.pngall.com/wp-content/uploads/2016/06/Superman-Logo-Free-Download-PNG.png" alt="img"/>
+                  <img src="https://www.pngall.com/wp-content/uploads/2016/06/Superman-Logo-Free-Download-PNG.png" alt="img" />
                 </a>
               </div>
               <div class="item">
                 <a href="#">
-                  <img src="https://blackpinkupdate.com/wp-content/uploads/2020/06/BLACKPINK-Logo-PNG-Transparent-Black.png" alt="img"/>
+                  <img src="https://blackpinkupdate.com/wp-content/uploads/2020/06/BLACKPINK-Logo-PNG-Transparent-Black.png" alt="img" />
                 </a>
               </div>
             </div>
             <div class="sponsor-slider slide-2">
               <div class="item">
                 <a href="#">
-                  <img src="https://www.pngarts.com/files/3/Logo-PNG-Image-Background.png" alt="img"/>
+                  <img src="https://www.pngarts.com/files/3/Logo-PNG-Image-Background.png" alt="img" />
                 </a>
               </div>
               <div class="item">
                 <a href="#">
-                  <img src="https://logodownload.org/wp-content/uploads/2020/10/garena-logo.png" alt="img"/>
+                  <img src="https://logodownload.org/wp-content/uploads/2020/10/garena-logo.png" alt="img" />
                 </a>
               </div>
               <div class="item">
                 <a href="#">
-                  <img src="https://pngimg.com/uploads/nike/nike_PNG12.png" alt="img"/>
+                  <img src="https://pngimg.com/uploads/nike/nike_PNG12.png" alt="img" />
                 </a>
               </div>
               <div class="item">
                 <a href="#">
-                  <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_CMYK_Green.png" alt="img"/>
+                  <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_CMYK_Green.png" alt="img" />
                 </a>
               </div>
               <div class="item">
                 <a href="#">
-                  <img src="http://assets.stickpng.com/images/585990234f6ae202fedf28cf.png" alt="img"/>
+                  <img src="http://assets.stickpng.com/images/585990234f6ae202fedf28cf.png" alt="img" />
                 </a>
               </div>
               <div class="item">
                 <a href="#">
-                  <img src="https://logos-world.net/wp-content/uploads/2021/02/Sky-Logo.png" alt="img"/>
+                  <img src="https://logos-world.net/wp-content/uploads/2021/02/Sky-Logo.png" alt="img" />
                 </a>
               </div>
               <div class="item">
                 <a href="#">
-                  <img src="https://purepng.com/public/uploads/large/purepng.com-disney-logologobrand-logoiconslogos-251519939495wtv86.png" alt="img"/>
+                  <img src="https://purepng.com/public/uploads/large/purepng.com-disney-logologobrand-logoiconslogos-251519939495wtv86.png" alt="img" />
                 </a>
               </div>
               <div class="item">
                 <a href="#">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/7/75/Arena_of_Valor_logo.png" alt="img"/>
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/7/75/Arena_of_Valor_logo.png" alt="img" />
                 </a>
               </div>
               <div class="item">
                 <a href="#">
-                  <img src="https://www.pngall.com/wp-content/uploads/2016/06/Superman-Logo-Free-Download-PNG.png" alt="img"/>
+                  <img src="https://www.pngall.com/wp-content/uploads/2016/06/Superman-Logo-Free-Download-PNG.png" alt="img" />
                 </a>
               </div>
               <div class="item">
                 <a href="#">
-                  <img src="https://blackpinkupdate.com/wp-content/uploads/2020/06/BLACKPINK-Logo-PNG-Transparent-Black.png" alt="img"/>
+                  <img src="https://blackpinkupdate.com/wp-content/uploads/2020/06/BLACKPINK-Logo-PNG-Transparent-Black.png" alt="img" />
                 </a>
               </div>
             </div>
           </div>
         </section>
-        <section id='team-section'>
-          <p>TEAM SEKCIJA EDIS</p>
-        </section>
         <section id="updates-section">
-          <div className='updates-header'>
-            <h1 className="updates-title">Newsletter</h1>
-            <button>IDI NA UPDATES</button>
-          </div>
-  
-          <div className="updates-grid">
-            <UpdateCard
-              image="https://www.datocms-assets.com/53444/1668448307-formula-student-aixtreme-racing-team.jpg?auto=format&fit=max&w=1024"
-              title="Newsletter December 2024"
-              date="01.01.2025"
-              description="Discover the progress and events of December!"
-            />
-            <UpdateCard
-              image="https://www.datocms-assets.com/53444/1668448307-formula-student-aixtreme-racing-team.jpg?auto=format&fit=max&w=1024"
-              title="Newsletter November 2024"
-              date="01.12.2024"
-              description="Discover the progress and events of November!"
-            />
-            <UpdateCard
-              image="https://www.datocms-assets.com/53444/1668448307-formula-student-aixtreme-racing-team.jpg?auto=format&fit=max&w=1024"
-              title="Newsletter October 2024"
-              date="01.11.2024"
-              description="Discover the progress and events of October!"
-            />
-          </div>
+
+          <section className="about-section">
+            <div className="text-container">
+              <h3 className="subtitle">University of Sarajevo</h3>
+              <h2 className="title">
+                UNSA <span className="highlight">RACING</span>
+              </h2>
+              <p className="description">
+                Our team, the "UNSA RACING" of the University of Sarajevo, was founded in February 2025. Since then, our team has grown to around 70 members, representing a wide variety of disciplines, including mechanical engineering, computer science, electrical engineering, industrial engineering, business administration, information technology and design, biomedical engineering, architecture, and hearing acoustics. Our primary goal is to build a new racing car for the upcoming competitions. This car will be built according to the specifications of "Formula Student," the largest international design competition for students. We are driven not only by our fascination with racing, but also by an incredible team spirit, which contributes significantly to the individual development of each team member and their development into true experts in their field.
+              </p>
+              <a href="#" className="more-link">
+                More about us →
+              </a>
+            </div>
+            <div className="image-container">
+              <img src={TeamPic} />
+            </div>
+          </section>
+
+          <section id="news-section">
+            <h2 className="news-title">News</h2>
+            <div class="news-slider-wrapper">
+              <div class="news-slider slide-1">
+              <div class="item">
+                  <a href="#">
+                    <UpdateCard
+                      image="https://www.datocms-assets.com/53444/1668448307-formula-student-aixtreme-racing-team.jpg?auto=format&fit=max&w=1024"
+                      description="Engine finally started"
+                    />
+                  </a>
+                </div>
+              <div class="item">
+                  <a href="#">
+                    <UpdateCard
+                      image="https://www.datocms-assets.com/53444/1668448307-formula-student-aixtreme-racing-team.jpg?auto=format&fit=max&w=1024"
+                      description="Engine finally started"
+                    />
+                  </a>
+                </div>
+              <div class="item">
+                  <a href="#">
+                    <UpdateCard
+                      image="https://www.datocms-assets.com/53444/1668448307-formula-student-aixtreme-racing-team.jpg?auto=format&fit=max&w=1024"
+                      description="Engine finally started"
+                    />
+                  </a>
+                </div>
+              <div class="item">
+                  <a href="#">
+                    <UpdateCard
+                      image="https://www.datocms-assets.com/53444/1668448307-formula-student-aixtreme-racing-team.jpg?auto=format&fit=max&w=1024"
+                      description="Engine finally started"
+                    />
+                  </a>
+                </div>
+              <div class="item">
+                  <a href="#">
+                    <UpdateCard
+                      image="https://www.datocms-assets.com/53444/1668448307-formula-student-aixtreme-racing-team.jpg?auto=format&fit=max&w=1024"
+                      description="Engine finally started"
+                    />
+                  </a>
+                </div>
+              <div class="item">
+                  <a href="#">
+                    <UpdateCard
+                      image="https://www.datocms-assets.com/53444/1668448307-formula-student-aixtreme-racing-team.jpg?auto=format&fit=max&w=1024"
+                      description="Engine finally started"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+
+          <section className="about-section">
+            <div className="image-container">
+              <img src={TeamPic} />
+            </div>
+            <div className="text-container">
+              <h3 className="subtitle">University of Sarajevo</h3>
+              <h2 className="title">
+                UNSA <span className="highlight">RACING</span>
+              </h2>
+              <p className="description">
+                Our team, the "UNSA RACING" of the University of Sarajevo, was founded in February 2025. Since then, our team has grown to around 70 members, representing a wide variety of disciplines, including mechanical engineering, computer science, electrical engineering, industrial engineering, business administration, information technology and design, biomedical engineering, architecture, and hearing acoustics. Our primary goal is to build a new racing car for the upcoming competitions. This car will be built according to the specifications of "Formula Student," the largest international design competition for students. We are driven not only by our fascination with racing, but also by an incredible team spirit, which contributes significantly to the individual development of each team member and their development into true experts in their field.
+              </p>
+              <a href="#" className="more-link">
+                More about us →
+              </a>
+            </div>
+          </section>
         </section>
-        <section id='contact-section'>
-          <p>Contact</p>
-        </section>
+
       </main>
     </div>
   );
