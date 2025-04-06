@@ -1,13 +1,21 @@
-// src/js/Pictures.js
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import '../css/Pictures.css';
 
-const NUM_IMAGES = 10; // total number of images
-const IMAGE_FOLDER = '/Images/gallery'; // inside public/
-
-
 const Pictures = () => {
-  const images = Array.from({ length: NUM_IMAGES }, (_, i) => `${IMAGE_FOLDER}/photo${i + 1}.jpg`);
+  const [images, setImages] = useState([]);
+
+  useEffect(() => {
+    fetch('/api/Images/gallery') // your backend route
+      .then(res => res.json())
+      .then(data => {
+        if (Array.isArray(data)) {
+          setImages(data);
+        } else {
+          console.error("Image data is not an array:", data);
+        }
+      })
+      .catch(err => console.error("Failed to load images", err));
+  }, []);
 
   return (
     <div className="gallery-container">
