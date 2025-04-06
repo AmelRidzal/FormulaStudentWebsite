@@ -9,35 +9,7 @@ import '../css/Default.css';
 import '../css/News.css';
 import '../css/SponsorScroller.css';
 
-const slides = [
-  {
-    image: logo,
-    title: 'UNSA RACING FORMULA TEAM',
-    subtitle: 'Motorsport in its purest form'
-  },
-  {
-    image: logo,
-    title: 'BUILDING THE FUTURE',
-    subtitle: 'Shaping tomorrow’s engineers through motorsport'
-  },
-  {
-    image: logo,
-    title: 'PURE PASSION',
-    subtitle: 'Where technology meets competition'
-  }
-];
 
-
-const sponsors = [
-  "https://1000logos.net/wp-content/uploads/2020/08/SolidWorks-Logo.png",
-  "https://1000logos.net/wp-content/uploads/2021/04/Pirelli-logo.png",
-  "https://1000logos.net/wp-content/uploads/2020/08/SolidWorks-Logo.png",
-  "https://1000logos.net/wp-content/uploads/2020/08/SolidWorks-Logo.png",
-  "https://1000logos.net/wp-content/uploads/2020/08/SolidWorks-Logo.png",
-  "https://1000logos.net/wp-content/uploads/2020/08/SolidWorks-Logo.png",
-];
-
-const sponsorLogos = [...sponsors, ...sponsors];
 
 
 function Home() {
@@ -45,12 +17,12 @@ function Home() {
     <div className="App">
       <main>
         <section id="landing-section">
-          {slides.map((slide, index) => (
-            <div className="slide" key={index}>
-              <img src={slide.image} alt={`Slide ${index}`} />
+
+            <div className="slide" >
+              <img src={logo} />
               <div className="overlay">
-                <h1>{slide.title}</h1>
-                <p>{slide.subtitle}</p>
+                <h1>UNSA RACING FORMULA TEAM</h1>
+                <p>Motorsport in its purest form</p>
                 <div className="social-icons">
                   <i className="fab fa-instagram" />
                   <i className="fab fa-linkedin" />
@@ -59,7 +31,7 @@ function Home() {
                 </div>
               </div>
             </div>
-          ))}
+            
         </section>
         <section className="about-section">
           <div className="image-container">

@@ -7,6 +7,14 @@
   background-color: #000; /* example background */
 }
 
+.navbar-left,
+.navbar-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+
 .navbar-logo img {
   height: 40px; /* adjust as needed */
 }
@@ -44,11 +52,15 @@
   color: white;
   text-decoration: none;
   font-weight: bold;
+  white-space: nowrap; /* prevents line break */
 }
 
 .nav-links li a:hover {
   color: #00d1b2;
 }
+
+
+
 
 
 
