@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/Updates.css';
+import '../css/News.css';
 import UpdateCard from './UpdateCard';
 
 function Updates() {
