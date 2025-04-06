@@ -3,7 +3,8 @@ import React from 'react';
 import '../css/Pictures.css';
 
 const NUM_IMAGES = 10; // total number of images
-const IMAGE_FOLDER = '/images/gallery'; // inside public/
+const IMAGE_FOLDER = '/Images/gallery'; // inside public/
+
 
 const Pictures = () => {
   const images = Array.from({ length: NUM_IMAGES }, (_, i) => `${IMAGE_FOLDER}/photo${i + 1}.jpg`);
