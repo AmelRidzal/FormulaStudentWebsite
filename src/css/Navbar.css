@@ -16,6 +16,20 @@
   width: auto;
 }
 
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo-text {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+
 .nav-links {
   display: flex;
   list-style: none;

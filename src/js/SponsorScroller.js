@@ -1,4 +1,4 @@
-import Style from '../css/Sponsors.css'
+import '../css/SponsorScroller.css'
 
 export default function Sponsors() {
 
