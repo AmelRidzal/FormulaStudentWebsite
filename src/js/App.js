@@ -5,7 +5,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import FbxViewer from '../js/FbxViewer';
 import Default from './Default.js'
 import Picturs from './Picturs.js'
-import Update from './Updates.js'
+import News from './News.js'
 import Sponsors from './Sponsors.js'
 
 import Navbar from './Navbar';
@@ -19,7 +19,7 @@ function App() {
         <Route path="/fbx" element={<FbxViewer />} />
         <Route path="/" element={<Default />} />
         <Route path="/pics" element={<Picturs />} />
-        <Route path="/upd" element={<Update />} />
+        <Route path="/news" element={<News />} />
         <Route path="/sponsors" element={<Sponsors />} />
         {/* other routes here */}
 
