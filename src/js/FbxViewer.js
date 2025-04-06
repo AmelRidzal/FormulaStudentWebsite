@@ -1,21 +1,25 @@
 // src/js/FbxViewer.js
-import React, { Suspense } from 'react';
+import React from 'react';
+
 import { Canvas } from '@react-three/fiber';
-import { OrbitControls } from '@react-three/drei';
-import FBXModel from './FBXModel';
+import { useGLTF, Stage, PresentationControls } from '@react-three/drei';
+
+function Model(props){
+  const { scene } = useGLTF("/FBXTest.glb")
+  return <primitive object={scene}{...props} />
+}
 
 const FbxViewer = () => {
   return (
-    <div style={{ width: '100vw', height: '100vh' }}>
-      <Canvas camera={{ position: [0, 2, 5], fov: 50 }}>
-        <ambientLight />
-        <pointLight position={[10, 10, 10]} />
-        <Suspense fallback={null}>
-          <FBXModel />
-        </Suspense>
-        <OrbitControls />
-      </Canvas>
-    </div>
+    <Canvas dpr={[1,2]} shadows camera={{fov:45}} style={{"position":"absolute"}}>
+      <color attach="background" args={["#101010"]}>
+      </color>
+      <PresentationControls speed={1.5} global zoom={.5} polar={[-0.1, Math.PI/4]}>
+      <Stage environment={'sunset'}>
+        <Model scale={0.01}></Model>
+      </Stage>
+      </PresentationControls>
+    </Canvas>
   );
 };
 
