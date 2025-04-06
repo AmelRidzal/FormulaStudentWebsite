@@ -1,12 +1,15 @@
 .App {
   text-align: center;
   font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
+main {
 
-.App-header {
-  background-color: #282c34;
-  padding: 20px;
-  color: white;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 nav ul {
@@ -24,15 +27,113 @@ nav ul li a {
   text-decoration: none;
 }
 
-main {
-  padding: 20px;
+
+
+#landing-section {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
 }
 
-footer {
-  background-color: #282c34;
-  color: white;
-  padding: 10px;
+.slideshow {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.slide {
   position: absolute;
   width: 100%;
-  bottom: 0;
+  height: 100%;
+  animation: slideFade 18s infinite;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.7;
+}
+
+.slide:nth-child(1) { animation-delay: 0s; }
+.slide:nth-child(2) { animation-delay: 6s; }
+.slide:nth-child(3) { animation-delay: 12s; }
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 2;
+}
+
+.overlay h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.overlay p {
+  font-size: 1.3rem;
+  margin-top: 0.5rem;
+}
+
+.social-icons {
+  margin-top: 1rem;
+}
+
+.social-icons i {
+  font-size: 1.5rem;
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
+
+@keyframes slideFade {
+  0% { opacity: 0; }
+  8% { opacity: 1; }
+  30% { opacity: 1; }
+  38% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+#about-section {
+  width: 100%;
+  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: pink;
+}
+#updates-section {
+  width: calc(100% - 40px);
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 50px;
+}
+.updates-header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.updates-header h1 {
+  margin-left: 20px;
+}
+.updates-header button {
+  margin-right: 20px;
+  width: 150px;
+  height: 40px;
+}
+
+#contact-section {
+  width: 100%;
+  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: pink;
 }
