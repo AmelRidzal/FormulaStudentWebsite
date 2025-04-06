@@ -1,14 +1,29 @@
 /* src/js/Navbar.css */
 .navbar {
-  background: #111;
-  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* separates logo and links */
+  padding: 0.5rem 1rem;
+  background-color: #000; /* example background */
+}
+
+.navbar-logo img {
+  height: 40px; /* adjust as needed */
+}
+
+.nav-logo img {
+  height: 32px;
+  width: auto;
 }
 
 .nav-links {
-  list-style: none;
   display: flex;
+  list-style: none;
+  flex: 1;
   gap: 2rem;
   justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-links li a {
@@ -20,3 +35,9 @@
 .nav-links li a:hover {
   color: #00d1b2;
 }
+
+
+
+
+
+
