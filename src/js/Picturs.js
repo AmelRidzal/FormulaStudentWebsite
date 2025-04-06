@@ -5,7 +5,7 @@ const Pictures = () => {
   const [images, setImages] = useState([]);
 
   useEffect(() => {
-    fetch('/api/images')  
+    fetch('/api/images')
       .then(res => res.json())
       .then(data => {
         if (Array.isArray(data)) {
@@ -16,7 +16,7 @@ const Pictures = () => {
       })
       .catch(err => console.error("Failed to load images", err));
   }, []);
-  
+
 
   return (
     <div className="gallery-container">

@@ -1,24 +1,22 @@
 /* src/js/Navbar.css */
 .navbar {
-    background: #111;
-    padding: 1rem;
-  }
-  
-  .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
-  }
-  
-  .nav-links li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .nav-links li a:hover {
-    color: #00d1b2;
-  }
-  
-  
+  background: #111;
+  padding: 1rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links li a:hover {
+  color: #00d1b2;
+}

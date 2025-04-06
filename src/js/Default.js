@@ -1,7 +1,7 @@
 import React from 'react';
 import '../css/Default.css';
 import UpdateCard from './UpdateCard';
-import '../css/updates.css';
+import '../css/Updates.css';
 import TeamPic from '../assets/TeamPic.jpg'
 
 const slides = [
@@ -207,7 +207,7 @@ function Home() {
             <h2 className="news-title">News</h2>
             <div class="news-slider-wrapper">
               <div class="news-slider slide-1">
-              <div class="item">
+                <div class="item">
                   <a href="#">
                     <UpdateCard
                       image="https://www.datocms-assets.com/53444/1668448307-formula-student-aixtreme-racing-team.jpg?auto=format&fit=max&w=1024"
@@ -215,7 +215,7 @@ function Home() {
                     />
                   </a>
                 </div>
-              <div class="item">
+                <div class="item">
                   <a href="#">
                     <UpdateCard
                       image="https://www.datocms-assets.com/53444/1668448307-formula-student-aixtreme-racing-team.jpg?auto=format&fit=max&w=1024"
@@ -223,7 +223,7 @@ function Home() {
                     />
                   </a>
                 </div>
-              <div class="item">
+                <div class="item">
                   <a href="#">
                     <UpdateCard
                       image="https://www.datocms-assets.com/53444/1668448307-formula-student-aixtreme-racing-team.jpg?auto=format&fit=max&w=1024"
@@ -231,7 +231,7 @@ function Home() {
                     />
                   </a>
                 </div>
-              <div class="item">
+                <div class="item">
                   <a href="#">
                     <UpdateCard
                       image="https://www.datocms-assets.com/53444/1668448307-formula-student-aixtreme-racing-team.jpg?auto=format&fit=max&w=1024"
@@ -239,7 +239,7 @@ function Home() {
                     />
                   </a>
                 </div>
-              <div class="item">
+                <div class="item">
                   <a href="#">
                     <UpdateCard
                       image="https://www.datocms-assets.com/53444/1668448307-formula-student-aixtreme-racing-team.jpg?auto=format&fit=max&w=1024"
@@ -247,7 +247,7 @@ function Home() {
                     />
                   </a>
                 </div>
-              <div class="item">
+                <div class="item">
                   <a href="#">
                     <UpdateCard
                       image="https://www.datocms-assets.com/53444/1668448307-formula-student-aixtreme-racing-team.jpg?auto=format&fit=max&w=1024"

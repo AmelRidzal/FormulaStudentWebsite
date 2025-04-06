@@ -1,50 +1,49 @@
 .updates-section {
-    padding: 40px;
-    font-family: 'Segoe UI', sans-serif;
-  }
-  
-  .updates-title {
-    font-size: 2rem;
-    color: #a61717;
-    margin-bottom: 30px;
-    border-bottom: 2px solid #a61717;
-    display: inline-block;
-  }
-  
-  .updates-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-    margin-top: 20px;
-  }
-  
-  .update-card {
-    background-color: #fff;
-    border-radius: 8px;
-    padding: 16px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: left;
-  }
-  
-  .update-image {
-    width: 100%;
-    height: auto;
-    border-radius: 4px;
-    margin-bottom: 12px;
-  }
-  
-  .view-content-button {
-    background: none;
-    border: none;
-    color: #a61717;
-    font-weight: bold;
-    cursor: pointer;
-    padding: 8px 0;
-  }
-  
-  footer {
-    margin-top: 40px;
-    text-align: center;
-    color: #666;
-  }
-  
+  padding: 40px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.updates-title {
+  font-size: 2rem;
+  color: #a61717;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #a61717;
+  display: inline-block;
+}
+
+.updates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.update-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.update-image {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+.view-content-button {
+  background: none;
+  border: none;
+  color: #a61717;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 8px 0;
+}
+
+footer {
+  margin-top: 40px;
+  text-align: center;
+  color: #666;
+}

@@ -6,7 +6,7 @@ import FbxViewer from '../js/FbxViewer';
 import Default from './Default.js'
 import Picturs from './Picturs.js'
 import Update from './Updates.js'
-import Sponsors from './Sponsors.jsx'
+import Sponsors from './Sponsors.js'
 
 import Navbar from './Navbar';
 import Footer from './Footer.js';
@@ -14,15 +14,15 @@ import Footer from './Footer.js';
 function App() {
   return (
     <Router>
-       <Navbar />
+      <Navbar />
       <Routes>
-      <Route path="/fbx" element={<FbxViewer />} />
-      <Route path="/" element={<Default />} />
-      <Route path="/pics" element={<Picturs />} />
-      <Route path="/upd" element={<Update />} />
-      <Route path="/sponsors" element={<Sponsors />} />
+        <Route path="/fbx" element={<FbxViewer />} />
+        <Route path="/" element={<Default />} />
+        <Route path="/pics" element={<Picturs />} />
+        <Route path="/upd" element={<Update />} />
+        <Route path="/sponsors" element={<Sponsors />} />
         {/* other routes here */}
-      
+
       </Routes>
       <Footer />
     </Router>
