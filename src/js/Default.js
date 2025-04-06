@@ -3,6 +3,7 @@ import React from 'react';
 import TeamPic from '../assets/TeamPic.jpg'
 import SponsorScroll from '../js/SponsorScroller'
 import NewsScroller from '../js/NewsScroller'
+import logo from '../assets/logoNoText.png';
 
 import '../css/Default.css';
 import '../css/News.css';
@@ -10,17 +11,17 @@ import '../css/SponsorScroller.css';
 
 const slides = [
   {
-    image: 'https://pbs.twimg.com/media/FYvVUxBXwAEHu4l.jpg:large',
+    image: logo,
     title: 'UNSA RACING FORMULA TEAM',
     subtitle: 'Motorsport in its purest form'
   },
   {
-    image: 'https://images.ansys.com/is/image/ansys/acceleration-run?wid=955&fmt=webp&op_usm=0.9,1.0,20,0&fit=constrain,0',
+    image: logo,
     title: 'BUILDING THE FUTURE',
     subtitle: 'Shaping tomorrow’s engineers through motorsport'
   },
   {
-    image: 'https://www.staffs.ac.uk/image-library/news/article-images/formula-student-2024.x8e3b6980.jpg',
+    image: logo,
     title: 'PURE PASSION',
     subtitle: 'Where technology meets competition'
   }
