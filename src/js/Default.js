@@ -33,18 +33,12 @@ function Home() {
           <div className="overlay">
             <h1>{slide.title}</h1>
             <p>{slide.subtitle}</p>
-            {/*<div className="social-icons">
+            <div className="social-icons">
               <i className="fab fa-instagram" />
               <i className="fab fa-linkedin" />
               <i className="fab fa-youtube" />
               <i className="fab fa-facebook" />
-            </div>*/}
-            <div className="social-icons">
-              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a>
-              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin"></i></a>
-              <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-youtube"></i></a>
-              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook"></i></a>
-            </div>
+            </div>          
           </div>
         </div>
         ))}
