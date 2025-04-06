@@ -18,8 +18,9 @@ function App() {
       <Route path="/" element={<Default />} />
       <Route path="/pics" element={<Picturs />} />
       <Route path="/upd" element={<Update />} />
-        {/* other routes here */}
       <Route path="/sponsors" element={<Sponsors />} />
+        {/* other routes here */}
+      
       </Routes>
     </Router>
   );
