@@ -1,5 +1,6 @@
-import Style from '../css/Sponsors.css'
+import Style from '../css/SponsorScroller.css'
 import Logo from '../assets/R.jpg'
+import SponsorScroll from '../js/SponsorScroller'
 
 export default function Sponsors() {
 
@@ -9,6 +10,8 @@ export default function Sponsors() {
             <div className="SponsorsTitle">
                 <h1>Our Sponsors</h1>
             </div>
+        <SponsorScroll></SponsorScroll>
+
             <div className="SponsorsAbout">
                 <div id="SponsorsTxt" style={Style.SponsorsAbout}>
                     <p>
