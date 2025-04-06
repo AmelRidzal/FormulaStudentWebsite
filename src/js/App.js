@@ -6,9 +6,12 @@ import Default from './Default.js'
 import Picturs from './Picturs.js'
 import Update from './Updates.js'
 
+import Navbar from './Navbar';
+
 function App() {
   return (
     <Router>
+       <Navbar />
       <Routes>
       <Route path="/fbx" element={<FbxViewer />} />
       <Route path="/" element={<Default />} />
@@ -21,3 +24,5 @@ function App() {
 }
 
 export default App;
+
+
