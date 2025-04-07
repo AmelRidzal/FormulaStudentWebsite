@@ -2,7 +2,6 @@ import React from 'react';
 
 import TeamPic from '../assets/TeamPic.jpg'
 import SponsorScroll from '../js/SponsorScroller'
-import NewsScroller from '../js/NewsScroller'
 import logo from '../assets/logoNoText.png';
 
 import '../css/Default.css';
@@ -16,23 +15,6 @@ function Home() {
   return (
     <div className="App">
       <main>
-        {/*<section id="landing-section">
-
-            <div className="slide" >
-              <img src={logo} />
-              <div className="overlay">
-                <h1>UNSA RACING FORMULA TEAM</h1>
-                <p>Motorsport in its purest form</p>
-                <div className="social-icons">
-                  <i className="fab fa-instagram" />
-                  <i className="fab fa-linkedin" />
-                  <i className="fab fa-youtube" />
-                  <i className="fab fa-facebook" />
-                </div>
-              </div>
-            </div>
-            
-        </section>*/}
         <section id="landing-section">
         <div className="landing-slide">
           <div className="overlay">
@@ -60,11 +42,23 @@ function Home() {
               </a>
             </div>
             <div className="image-container">
-              <img src={TeamPic} />
+              <img src={TeamPic} alt="slika"/>
             </div>
           </section>
 
-          <SponsorScroll></SponsorScroll>
+          <section className="latest-news-section">
+  <h2 className="section-title">Latest News</h2>
+  <div className="news-cards">
+      <div className="news-card">
+        <img src={logo} alt="slika" />
+        <div className="news-content">
+          <h3>UNSA Racing ima web stranicu</h3>
+          <p>Poslije minimalnog truda dvojice clanova ekipe za web i jednog iz sasije, web stranica je napokon sprzena</p>
+        </div>
+      </div>
+  </div>
+</section>
+
 
       <section id="subteams" className="subteams-section">
         <div className="text">
@@ -114,25 +108,14 @@ function Home() {
 
           
 
-        <section className="latest-news-section">
-  <h2 className="section-title">Latest News</h2>
-  <div className="news-cards">
-      <div className="news-card">
-        <img src={logo} alt="slika" />
-        <div className="news-content">
-          <h3>UNSA Racing ima web stranicu</h3>
-          <p>Poslije minimalnog truda dvojice clanova ekipe za web i jednog iz sasije, web stranica je napokon sprzena</p>
-        </div>
-      </div>
-  </div>
-</section>
+
 
 
 
 
           <section className="about-section">
             <div className="image-container">
-              <img src={TeamPic} />
+              <img src={TeamPic} alt="slika"/>
             </div>
             <div className="text-container">
               <h3 className="subtitle">University of Sarajevo</h3>
@@ -147,6 +130,9 @@ function Home() {
               </a>
             </div>
           </section>
+
+          
+          <SponsorScroll></SponsorScroll>
         </section>
 
       </main>
