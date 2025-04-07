@@ -2,13 +2,32 @@
 import React, { useState, Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { useGLTF, Stage, PresentationControls } from '@react-three/drei';
+import { useEffect } from 'react';
 
 import '../css/FBXViewer.css';
 
-function Model({ modelPath }) {
+
+const Model = ({ modelPath }) => {
   const { scene } = useGLTF(modelPath);
-  return <primitive object={scene} scale={0.01} />;
-}
+
+  useEffect(() => {
+    scene.traverse((child) => {
+      if (child.isLight) {
+        scene.remove(child); // Remove any light from the model
+      }
+
+      if (child.isMesh) {
+        // Optional: Tweak materials here too
+        const mat = child.material;
+        mat.roughness = 1;
+        mat.metalness = 0;
+        mat.toneMapped = true;
+      }
+    });
+  }, [scene]);
+
+  return <primitive object={scene} />;
+};
 
 const FbxViewer = () => {
   const [model, setModel] = useState('/models/aero.glb'); // default model path
@@ -25,11 +44,11 @@ const FbxViewer = () => {
       </nav>
 
       {/* 3D Canvas */}
-      <Canvas dpr={[1, 2]} shadows camera={{ fov: 45 }} style={{ position: "absolute" }}>
+      <Canvas dpr={[1, 2]}  camera={{ fov: 45 }} style={{ position: "absolute" }}>
         <color attach="background" args={["#101010"]} />
         <Suspense fallback={null}>
           <PresentationControls key={model} speed={1.5} global zoom={0.5} polar={[-Math.PI / 2, Math.PI / 2]}>
-            <Stage environment="sunset">
+            <Stage environment="city"   preset="soft">
               <Model modelPath={model} />
             </Stage>
           </PresentationControls>
