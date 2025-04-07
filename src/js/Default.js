@@ -114,7 +114,19 @@ function Home() {
 
           
 
-          <NewsScroller></NewsScroller>
+        <section className="latest-news-section">
+  <h2 className="section-title">Latest News</h2>
+  <div className="news-cards">
+      <div className="news-card">
+        <img src={logo} alt="slika" />
+        <div className="news-content">
+          <h3>UNSA Racing ima web stranicu</h3>
+          <p>Poslije minimalnog truda dvojice clanova ekipe za web i jednog iz sasije, web stranica je napokon sprzena</p>
+        </div>
+      </div>
+  </div>
+</section>
+
 
 
 
