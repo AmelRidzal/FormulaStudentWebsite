@@ -28,54 +28,54 @@ export default function Sponsors() {
             <div className="SponsorsDisplay">
                 <div className="Sponsors-grid-container">
                     <div className="Sponsors-grid-item">
-                        <img src={Logo} className="Sponsors-logo"></img>
+                        <img src={Logo} className="Sponsors-logo" alt='slika'></img>
                         <div className="Sponsor-overlay">
                             <p>Company name<br />Sponsor type</p>
                         </div>
                     </div>
                     <div className="Sponsors-grid-item">
-                        <img src={Logo} className="Sponsors-logo"></img>
+                        <img src={Logo} className="Sponsors-logo" alt='slika'></img>
                         <div className="Sponsor-overlay">
                             <p>Company name<br />Sponsor type</p>
                         </div>
                     </div>
                     <div className="Sponsors-grid-item">
-                        <img src={Logo} className="Sponsors-logo"></img>
+                        <img src={Logo} className="Sponsors-logo" alt='slika'></img>
                         <div className="Sponsor-overlay">
                             <p>Company name<br />Sponsor type</p>
                         </div>
                     </div>
                     <div className="Sponsors-grid-item">
-                        <img src={Logo} className="Sponsors-logo"></img>
+                        <img src={Logo} className="Sponsors-logo" alt='slika'></img>
                         <div className="Sponsor-overlay">
                             <p>Company name<br />Sponsor type</p>
                         </div>
                     </div>
                     <div className="Sponsors-grid-item">
-                        <img src={Logo} className="Sponsors-logo"></img>
+                        <img src={Logo} className="Sponsors-logo" alt='slika'></img>
                         <div className="Sponsor-overlay">
                             <p>Company name<br />Sponsor type</p>
                         </div>
                     </div>
                     <div className="Sponsors-grid-item">
-                        <img src={Logo} className="Sponsors-logo"></img>
+                        <img src={Logo} className="Sponsors-logo" alt='slika'></img>
                         <div className="Sponsor-overlay">
                             <p>Company name<br />Sponsor type</p>
                         </div>
                     </div>
                     <div className="Sponsors-grid-item">
-                        <img src={Logo} className="Sponsors-logo"></img>
+                        <img src={Logo} className="Sponsors-logo" alt='slika'></img>
                         <div className="Sponsor-overlay">
                             <p>Company name<br />Sponsor type</p>
                         </div>
                     </div>
                     <div className="Sponsors-grid-item">
-                        <img src={Logo} className="Sponsors-logo"></img>
+                        <img src={Logo} className="Sponsors-logo" alt='slika'></img>
                         <div className="Sponsor-overlay">
                             <p>Company name<br />Sponsor type</p>
                         </div>
                     </div><div className="Sponsors-grid-item">
-                        <img src={Logo} className="Sponsors-logo"></img>
+                        <img src={Logo} className="Sponsors-logo" alt='slika'></img>
                         <div className="Sponsor-overlay">
                             <p>Company name<br />Sponsor type</p>
                         </div>
