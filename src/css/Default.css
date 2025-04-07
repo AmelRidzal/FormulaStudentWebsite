@@ -29,7 +29,7 @@ nav ul li a {
 }
 
 
-
+/*
 #landing-section {
   display: flex;
   justify-content: center;
@@ -104,9 +104,50 @@ nav ul li a {
   cursor: pointer;
 }
 
+*/
 
 
+#landing-section {
+  height: 100vh;
+  position: relative;
+  z-index: 1000;
+}
 
+.landing-slide {
+  background-image: url('https://www.lboro.ac.uk/media/media/schoolanddepartments/aae/images/news/2023/lum-silverstone-main.jpg'); 
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h2 {
+  font-size: 1rem;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 1.3;
+}
 
 
 /*----------------------------------*/
@@ -195,3 +236,80 @@ nav ul li a {
   background-color: antiquewhite;
 }
 
+/*-------------------------------------------*/
+
+.subteams-section {
+  background-color: #292424;
+  padding: 4rem 2rem;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  
+}
+
+.subteams-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.subteams-title {
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+}
+.subteams-subtitle {
+  font-size: 20px;
+  color: white;
+}
+
+.subteam-card {
+  background-color: #fff;
+  border-radius: 2rem;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  height: 400px;
+  
+  &:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+    background-color: lightseagreen;
+  }
+  
+}
+
+
+.arrow-btn {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid #000;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  font-size: 1.2rem;
+}
+
+.join-circle {
+  position: fixed;
+  bottom: 2rem;
+  left: 2rem;
+  background-color: #facc15; 
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 0.75rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  z-index: 100;
+}
