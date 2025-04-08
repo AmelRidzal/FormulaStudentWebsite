@@ -1,5 +1,5 @@
 .footer {
-  background: linear-gradient(135deg, #004aad, #007bff);
+  background: var(--logo-blue) ;/*linear-gradient(135deg, #004aad, #007bff);*/
   color: white;
   padding: 40px 20px 20px 20px;
   text-align: center;

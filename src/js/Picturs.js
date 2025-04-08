@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+
+import '../css/Collors.css';
 import '../css/Pictures.css';
 
 const Pictures = () => {

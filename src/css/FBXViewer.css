@@ -32,8 +32,8 @@
 }
 
 .nav-links button:hover {
-  background: #00d1b2;
-  border-color: #00d1b2;
+  background: var(--logo-blue);
+  border-color: var(--logo-blue);
   color: #101010;
   transform: scale(1.05);
 }

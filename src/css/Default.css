@@ -118,7 +118,7 @@ h1 {
 }
 
 .subtitle {
-  color: #00d1b2;
+  color: var(--logo-blue);
   font-size: 18px;
   margin-bottom: 10px;
 }
@@ -130,7 +130,7 @@ h1 {
 }
 
 .highlight {
-  background-color: #00d1b2;
+  background-color: var(--logo-blue);
   color: white;
   padding: 4px 8px;
   border-radius: 4px;
@@ -144,7 +144,7 @@ h1 {
 }
 
 .more-link {
-  color: #00d1b2;
+  color: var(--logo-blue);
   font-weight: 600;
   text-decoration: none;
   transition: 0.3s;
@@ -207,7 +207,7 @@ h1 {
   &:hover {
     transform: translateY(-5px);
     cursor: pointer;
-    background-color: lightseagreen;
+    background-color: var(--logo-blue);
   }
   
 }
@@ -257,7 +257,7 @@ h1 {
   font-size: 2rem;
   margin-bottom: 1.5rem;
   text-align: left;
-  color: #00d1b2;
+  color: var(--logo-blue);
 }
 
 .news-cards {

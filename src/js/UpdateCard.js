@@ -1,4 +1,6 @@
 import React from 'react';
+
+import '../css/Collors.css';
 import '../css/News.css';
 
 function UpdateCard({ image, title, date, description }) {

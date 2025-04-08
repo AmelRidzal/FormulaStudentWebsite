@@ -5,6 +5,7 @@ import { useGLTF, Stage, PresentationControls } from '@react-three/drei';
 import { useEffect } from 'react';
 
 import '../css/FBXViewer.css';
+import '../css/Collors.css';
 
 
 const Model = ({ modelPath }) => {

@@ -1,4 +1,5 @@
 import '../css/SponsorScroller.css'
+import '../css/Collors.css';
 
 export default function Sponsors() {
 

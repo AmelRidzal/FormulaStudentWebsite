@@ -6,6 +6,7 @@ import logo from '../assets/logoNoText.png';
 
 import '../css/Default.css';
 import '../css/News.css';
+import '../css/Collors.css';
 import '../css/SponsorScroller.css';
 
 

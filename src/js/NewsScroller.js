@@ -1,4 +1,5 @@
 import '../css/NewsScroller.css'
+import '../css/Collors.css';
 
 import UpdateCard from './UpdateCard';
 

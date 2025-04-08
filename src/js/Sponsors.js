@@ -2,6 +2,8 @@ import Style from '../css/Sponsors.css'
 import Logo from '../assets/R.jpg'
 import SponsorScroll from '../js/SponsorScroller'
 
+import '../css/Collors.css';
+
 export default function Sponsors() {
 
 

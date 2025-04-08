@@ -57,7 +57,7 @@
 }
 
 .nav-links li a:hover {
-  color: #00d1b2;
+  color: var(--logo-blue);
 }
 
 

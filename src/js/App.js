@@ -7,7 +7,6 @@ import Default from './Default.js'
 import Picturs from './Picturs.js'
 import News from './News.js'
 import Sponsors from './Sponsors.js'
-
 import Navbar from './Navbar';
 import Footer from './Footer.js';
 
