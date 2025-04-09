@@ -173,9 +173,10 @@ h1 {
   padding: 4rem 2rem;
   position: relative;
   width: 100%;
-  height: 100vh;
-  
+  min-height: 100vh; /* changed from height to min-height */
+  overflow: hidden;
 }
+
 
 .subteams-grid {
   display: grid;
@@ -202,7 +203,10 @@ h1 {
   text-align: center;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
-  height: 400px;
+  min-height: 400px;
+  overflow-wrap: break-word; /* prevent text overflow */
+  word-break: break-word;    /* break long words */
+
   
   &:hover {
     transform: translateY(-5px);
