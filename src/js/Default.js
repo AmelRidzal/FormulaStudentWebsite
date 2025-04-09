@@ -17,15 +17,15 @@ function Home() {
     <div className="App">
       <main>
         <section id="landing-section">
-        <div className="landing-slide">
-          <div className="overlay">
-            <h2>ABOUT US</h2>
-            <h1>We’re a passionate team with<br />specialized subteams</h1>
+          <div className="landing-slide">
+            <div className="overlay">
+              <h2>ABOUT US</h2>
+              <h1>We’re a passionate team with<br />specialized subteams</h1>
+            </div>
           </div>
-        </div>
-      </section>
-          
-      
+        </section>
+
+
 
         <section id="updates-section">
 
@@ -43,71 +43,71 @@ function Home() {
               </a>
             </div>
             <div className="image-container">
-              <img src={TeamPic} alt="slika"/>
+              <img src={TeamPic} alt="slika" />
             </div>
           </section>
 
           <section className="latest-news-section">
-  <h2 className="section-title">Latest News</h2>
-  <div className="news-cards">
-      <div className="news-card">
-        <img src={logo} alt="slika" />
-        <div className="news-content">
-          <h3>UNSA Racing ima web stranicu</h3>
-          <p>Poslije minimalnog truda dvojice clanova ekipe za web i jednog iz sasije, web stranica je napokon sprzena</p>
-        </div>
-      </div>
-  </div>
-</section>
-
-
-      <section id="subteams" className="subteams-section">
-        <div className="text">
-          <p className="subteams-subtitle">WHO WE ARE</p>
-          <h2 className="subteams-title">Meet our subteams</h2>
-        </div>
-
-        <div className="subteams-grid">
-          {[
-            {
-              title: 'POWERTRAIN',
-              icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZGSKLUE2XO9JfbO7DC8w_Z3J-nfxOW4NFuKSZSNWPNVCmSIilurcBbqrmkcUnlgag3cI&usqp=CAU',
-              desc: 'Design and study of an introduction system with the help of computational fluid mechanics programs.'
-            },
-            {
-              title: 'DRIVETRAIN',
-              icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZGSKLUE2XO9JfbO7DC8w_Z3J-nfxOW4NFuKSZSNWPNVCmSIilurcBbqrmkcUnlgag3cI&usqp=CAU',
-              desc: 'Responsible for all the mechanisms and components used to transmit power from the engine to the driving axle.'
-            },
-            {
-              title: 'SUSPENSION',
-              icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZGSKLUE2XO9JfbO7DC8w_Z3J-nfxOW4NFuKSZSNWPNVCmSIilurcBbqrmkcUnlgag3cI&usqp=CAU',
-              desc: (
-                <>
-                  • Maximise traction<br />
-                  • Kinematics and Dynamic analysis<br />
-                  • Steering analysis
-                </>
-              )
-            },
-            {
-              title: 'ELECTRONICS',
-              icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZGSKLUE2XO9JfbO7DC8w_Z3J-nfxOW4NFuKSZSNWPNVCmSIilurcBbqrmkcUnlgag3cI&usqp=CAU',
-              desc: 'The subgroup electronics are responsible for development of critical electronic systems in the car.'
-            }
-          ].map((item, idx) => (
-            <div key={idx} className="subteam-card">
-              <img src={item.icon} alt={item.title} className="h-12 mx-auto mb-4" />
-              <h3 className="text-xl font-bold mb-2">{item.title}</h3>
-              <p className="text-sm text-gray-600 mb-4">{item.desc}</p>
-              <div className="arrow-btn">→</div>
+            <h2 className="section-title">Latest News</h2>
+            <div className="news-cards">
+              <div className="news-card">
+                <img src={logo} alt="slika" />
+                <div className="news-content">
+                  <h3>UNSA Racing ima web stranicu</h3>
+                  <p>Poslije minimalnog truda dvojice clanova ekipe za web i jednog iz sasije, web stranica je napokon sprzena</p>
+                </div>
+              </div>
             </div>
-          ))}
-        </div>
-        </section>
+          </section>
 
 
-          
+          <section id="subteams" className="subteams-section">
+            <div className="text">
+              <p className="subteams-subtitle">WHO WE ARE</p>
+              <h2 className="subteams-title">Meet our subteams</h2>
+            </div>
+
+            <div className="subteams-grid">
+              {[
+                {
+                  title: 'POWERTRAIN',
+                  icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZGSKLUE2XO9JfbO7DC8w_Z3J-nfxOW4NFuKSZSNWPNVCmSIilurcBbqrmkcUnlgag3cI&usqp=CAU',
+                  desc: 'Design and study of an introduction system with the help of computational fluid mechanics programs.'
+                },
+                {
+                  title: 'DRIVETRAIN',
+                  icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZGSKLUE2XO9JfbO7DC8w_Z3J-nfxOW4NFuKSZSNWPNVCmSIilurcBbqrmkcUnlgag3cI&usqp=CAU',
+                  desc: 'Responsible for all the mechanisms and components used to transmit power from the engine to the driving axle.'
+                },
+                {
+                  title: 'SUSPENSION',
+                  icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZGSKLUE2XO9JfbO7DC8w_Z3J-nfxOW4NFuKSZSNWPNVCmSIilurcBbqrmkcUnlgag3cI&usqp=CAU',
+                  desc: (
+                    <>
+                      • Maximise traction<br />
+                      • Kinematics and Dynamic analysis<br />
+                      • Steering analysis
+                    </>
+                  )
+                },
+                {
+                  title: 'ELECTRONICS',
+                  icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZGSKLUE2XO9JfbO7DC8w_Z3J-nfxOW4NFuKSZSNWPNVCmSIilurcBbqrmkcUnlgag3cI&usqp=CAU',
+                  desc: 'The subgroup electronics are responsible for development of critical electronic systems in the car.'
+                }
+              ].map((item, idx) => (
+                <div key={idx} className="subteam-card">
+                  <img src={item.icon} alt={item.title} className="h-12 mx-auto mb-4" />
+                  <h3 className="text-xl font-bold mb-2">{item.title}</h3>
+                  <p className="text-sm text-gray-600 mb-4">{item.desc}</p>
+                  <div className="arrow-btn">→</div>
+                </div>
+              ))}
+            </div>
+          </section>
+
+
+
 
 
 
@@ -116,7 +116,7 @@ function Home() {
 
           <section className="about-section">
             <div className="image-container">
-              <img src={TeamPic} alt="slika"/>
+              <img src={TeamPic} alt="slika" />
             </div>
             <div className="text-container">
               <h3 className="subtitle">University of Sarajevo</h3>
@@ -132,7 +132,7 @@ function Home() {
             </div>
           </section>
 
-          
+
           <SponsorScroll></SponsorScroll>
         </section>
 
