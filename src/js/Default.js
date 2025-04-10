@@ -1,6 +1,8 @@
 import React from 'react';
 
 import TeamPic from '../assets/TeamPic.jpg'
+import Jesa from '../assets/JESA.jpg'
+import MainPic from '../assets/lum-silverstone-main.jpg'
 import SponsorScroll from '../js/SponsorScroller'
 import logo from '../assets/logoNoText.png';
 
@@ -16,14 +18,22 @@ function Home() {
   return (
     <div className="App">
       <main>
+
         <section id="landing-section">
           <div className="landing-slide">
+            <img
+              src={MainPic}
+              alt="Silverstone track"
+              className="landing-img"
+            />
             <div className="overlay">
               <h2>ABOUT US</h2>
               <h1>We’re a passionate team with<br />specialized subteams</h1>
             </div>
           </div>
         </section>
+
+
 
 
 
@@ -116,7 +126,7 @@ function Home() {
 
           <section className="about-section">
             <div className="image-container">
-              <img src={TeamPic} alt="slika" />
+              <img src={Jesa} alt="slika" />
             </div>
             <div className="text-container">
               <h3 className="subtitle">University of Sarajevo</h3>
