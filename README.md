@@ -1,8 +1,8 @@
-🏎️ Formula Student Website
+#🏎️ Formula Student Website
 A dynamic and engaging website for the UNSA Racing team, developed using React and deployed on Vercel. This platform showcases our team's spirit, updates, and achievements in the Formula Student competitions.​
 
 🚀 Live Demo
-Explore the live website here: formula-student-website.vercel.app​
+Explore the live website here: [formula-student-website.vercel.app​](https://formula-student-website-git-master-amelridzals-projects.vercel.app/)
 
 📂 Project Structure
 Frontend: Built with React, utilizing components like UpdateCard and SponsorScroll.
