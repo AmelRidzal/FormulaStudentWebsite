@@ -7,7 +7,7 @@ const Pictures = () => {
   const [images, setImages] = useState([]);
 
   useEffect(() => {
-    fetch('/api/images')
+    fetch('/api/gallery')
       .then(res => res.json())
       .then(data => {
         if (Array.isArray(data)) {
