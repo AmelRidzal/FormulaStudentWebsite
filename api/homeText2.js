@@ -3,7 +3,7 @@ import fs from 'fs';
 import path from 'path';
 
 export default function handler(req, res) {
-  const filePath = path.join(process.cwd(), 'public', 'text', 'defaultText2.txt');
+  const filePath = path.join(process.cwd(), 'public', 'text','homePage', 'homeText2.txt');
 
   fs.readFile(filePath, 'utf8', (err, data) => {
     if (err) {

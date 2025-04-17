@@ -1,54 +1,43 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import UpdateCard from './UpdateCard';
 
 import '../css/Collors.css';
 import '../css/News.css';
 
 function Updates() {
+  const [updates, setUpdates] = useState([]);
+
+  useEffect(() => {
+    const loadNewsletters = async () => {
+      try {
+        const response = await fetch('/api/news');
+        if (!response.ok) throw new Error('Failed to fetch newsletters');
+        const data = await response.json();
+        setUpdates(data);
+      } catch (error) {
+        console.error('Error loading newsletters:', error);
+      }
+    };
+
+    loadNewsletters();
+  }, []);
+
   return (
     <div className="updates-section">
       <h1 className="updates-title">Newsletter</h1>
-
       <div className="updates-grid">
-        <UpdateCard
-          image="https://www.datocms-assets.com/53444/1668448307-formula-student-aixtreme-racing-team.jpg?auto=format&fit=max&w=1024"
-          title="Newsletter December 2024"
-          date="01.01.2025"
-          description="Discover the progress and events of December!"
-        />
-        <UpdateCard
-          image="https://www.datocms-assets.com/53444/1668448307-formula-student-aixtreme-racing-team.jpg?auto=format&fit=max&w=1024"
-          title="Newsletter November 2024"
-          date="01.12.2024"
-          description="Discover the progress and events of November!"
-        />
-        <UpdateCard
-          image="https://www.datocms-assets.com/53444/1668448307-formula-student-aixtreme-racing-team.jpg?auto=format&fit=max&w=1024"
-          title="Newsletter October 2024"
-          date="01.11.2024"
-          description="Discover the progress and events of October!"
-        />
-        <UpdateCard
-          image="https://www.datocms-assets.com/53444/1668448307-formula-student-aixtreme-racing-team.jpg?auto=format&fit=max&w=1024"
-          title="Newsletter December 2024"
-          date="01.01.2025"
-          description="Discover the progress and events of December!"
-        />
-        <UpdateCard
-          image="https://www.datocms-assets.com/53444/1668448307-formula-student-aixtreme-racing-team.jpg?auto=format&fit=max&w=1024"
-          title="Newsletter November 2024"
-          date="01.12.2024"
-          description="Discover the progress and events of November!"
-        />
-        <UpdateCard
-          image="https://www.datocms-assets.com/53444/1668448307-formula-student-aixtreme-racing-team.jpg?auto=format&fit=max&w=1024"
-          title="Newsletter October 2024"
-          date="01.11.2024"
-          description="Discover the progress and events of October!"
-        />
+        {updates.map((update, index) => (
+          <UpdateCard
+            key={index}
+            image={update.image}
+            title={update.title}
+            date={update.date}
+            description={update.description}
+          />
+        ))}
       </div>
     </div>
   );
 }
-
+//<UpdateCard image={"/newsletters/01.01.2025/image.jpg"}></UpdateCard>
 export default Updates;

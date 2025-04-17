@@ -11,37 +11,42 @@ import '../css/News.css';
 import '../css/Collors.css';
 import '../css/SponsorScroller.css';
 
-// /src/components/DefaultText1.js
 
-const DefaultText1 = () => {
-  const [text, setText] = useState('');
-
-  useEffect(() => {
-    fetch('/api/defaultText1')
-      .then((res) => res.json())
-      .then((data) => setText(data.text))
-      .catch((err) => console.error('Error fetching text:', err));
-  }, []);
-
-  return <span>{text}</span>;
-};
-
-const DefaultText2 = () => {
-  const [text, setText] = useState('');
-
-  useEffect(() => {
-    fetch('/api/defaultText2')
-      .then((res) => res.json())
-      .then((data) => setText(data.text))
-      .catch((err) => console.error('Error fetching text:', err));
-  }, []);
-
-  return <span>{text}</span>;
-};
 
 
 
 function Home() {
+
+
+  // /src/components/DefaultText1.js
+
+const HomeText1 = () => {
+  const [text, setText] = useState('');
+
+  useEffect(() => {
+    fetch('/api/homeText1')
+      .then((res) => res.json())
+      .then((data) => setText(data.text))
+      .catch((err) => console.error('Error fetching text:', err));
+  }, []);
+
+  return <span>{text}</span>;
+};
+
+const HomeText2 = () => {
+  const [text, setText] = useState('');
+
+  useEffect(() => {
+    fetch('/api/homeText2')
+      .then((res) => res.json())
+      .then((data) => setText(data.text))
+      .catch((err) => console.error('Error fetching text:', err));
+  }, []);
+
+  return <span>{text}</span>;
+};
+
+
   return (
     <div className="App">
       <main>
@@ -73,7 +78,7 @@ function Home() {
                 UNSA <span className="highlight">RACING</span>
               </h2>
               <p className="description">
-                <DefaultText1 />
+                <HomeText1 />
               </p>
 
               <a href="#" className="more-link">
@@ -162,7 +167,7 @@ function Home() {
                 UNSA <span className="highlight">RACING</span>
               </h2>
               <p className="description">
-                <DefaultText1 />
+                <HomeText2 />
               </p>
 
               <a href="#" className="more-link">
