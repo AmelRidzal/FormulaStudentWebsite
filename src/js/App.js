@@ -9,6 +9,7 @@ import News from './News.js'
 import Sponsors from './Sponsors.js'
 import Navbar from './Navbar';
 import Footer from './Footer.js';
+import Subteam from './Subteam.js';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/pics" element={<Picturs />} />
         <Route path="/news" element={<News />} />
         <Route path="/sponsors" element={<Sponsors />} />
+        <Route path="/subteam" element={<Subteam />} />
         {/* other routes here */}
 
       </Routes>

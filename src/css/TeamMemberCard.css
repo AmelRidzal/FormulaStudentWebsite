@@ -1,0 +1,50 @@
+.teammember {
+    background-color: #292424;
+    padding: 4rem 2rem;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.teammember-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.teammember-card {
+    background-color: #fff;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.teammember-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+.teammember-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.list-disc {
+    list-style-type: disc;
+}
+
+.list-inside {
+    padding-left: 1rem;
+}
+
+

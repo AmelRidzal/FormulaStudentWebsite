@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-
+import { useNavigate } from 'react-router-dom';
 import TeamPic from '../assets/TeamPic.jpg'
 import FormulaStudentPic from '../assets/industrial_website_png.png'
 import MainPic from '../assets/lum-silverstone-main.jpg'
@@ -47,7 +47,7 @@ const HomeText2 = () => {
 
   return <span>{text}</span>;
 };
-
+const navigate = useNavigate();
 
   return (
     <div className="App">
@@ -117,12 +117,14 @@ const HomeText2 = () => {
                 {
                   title: 'POWERTRAIN',
                   icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZGSKLUE2XO9JfbO7DC8w_Z3J-nfxOW4NFuKSZSNWPNVCmSIilurcBbqrmkcUnlgag3cI&usqp=CAU',
-                  desc: 'Design and study of an introduction system with the help of computational fluid mechanics programs.'
+                  desc: 'Design and study of an introduction system with the help of computational fluid mechanics programs.',
+                  linkto:"/subteam"
                 },
                 {
                   title: 'DRIVETRAIN',
                   icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZGSKLUE2XO9JfbO7DC8w_Z3J-nfxOW4NFuKSZSNWPNVCmSIilurcBbqrmkcUnlgag3cI&usqp=CAU',
-                  desc: 'Responsible for all the mechanisms and components used to transmit power from the engine to the driving axle.'
+                  desc: 'Responsible for all the mechanisms and components used to transmit power from the engine to the driving axle.',
+                  linkto:"/subteam"
                 },
                 {
                   title: 'SUSPENSION',
@@ -133,15 +135,20 @@ const HomeText2 = () => {
                       • Kinematics and Dynamic analysis<br />
                       • Steering analysis
                     </>
-                  )
+                  ),
+                  linkto:"/subteam"
                 },
                 {
                   title: 'ELECTRONICS',
                   icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZGSKLUE2XO9JfbO7DC8w_Z3J-nfxOW4NFuKSZSNWPNVCmSIilurcBbqrmkcUnlgag3cI&usqp=CAU',
-                  desc: 'The subgroup electronics are responsible for development of critical electronic systems in the car.'
+                  desc: 'The subgroup electronics are responsible for development of critical electronic systems in the car.',
+                  linkto:"/subteam"
                 }
               ].map((item, idx) => (
-                <div key={idx} className="subteam-card">
+                <div key={idx} 
+                className="subteam-card" 
+                onClick={() => navigate(item.linkto)}
+                style={{ cursor: "pointer" }}>
                   <img src={item.icon} alt={item.title} className="h-12 mx-auto mb-4" />
                   <h3 className="text-xl font-bold mb-2">{item.title}</h3>
                   <p className="text-sm text-gray-600 mb-4">{item.desc}</p>
