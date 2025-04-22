@@ -1,15 +1,17 @@
 import React, { useEffect, useState } from 'react';
 
 import TeamPic from '../assets/TeamPic.jpg'
-import Jesa from '../assets/JESA.jpg'
+import FormulaStudentPic from '../assets/industrial_website_png.png'
 import MainPic from '../assets/lum-silverstone-main.jpg'
 import SponsorScroll from '../js/SponsorScroller'
+import SponsorScrollV2 from '../js/SponsorScrollerV2'
 import logo from '../assets/logoNoText.png';
 
 import '../css/Default.css';
 import '../css/News.css';
 import '../css/Collors.css';
 import '../css/SponsorScroller.css';
+import '../css/SponsorScrollerV2.css';
 
 
 
@@ -74,8 +76,8 @@ const HomeText2 = () => {
           <section className="about-section">
             <div className="text-container">
               <h3 className="subtitle">University of Sarajevo</h3>
-              <h2 className="title">
-                UNSA <span className="highlight">RACING</span>
+              <h2 className="title">UNSA 
+                 <span className="highlight">RACING</span>
               </h2>
               <p className="description">
                 <HomeText1 />
@@ -159,25 +161,26 @@ const HomeText2 = () => {
 
           <section className="about-section">
             <div className="image-container">
-              <img src={Jesa} alt="slika" />
+              <img src={FormulaStudentPic} alt="slika" />
             </div>
             <div className="text-container">
               <h3 className="subtitle">University of Sarajevo</h3>
-              <h2 className="title">
-                UNSA <span className="highlight">RACING</span>
+              <h2 className="title">What is 
+              <span className="highlight">Formula Student?</span>
               </h2>
               <p className="description">
                 <HomeText2 />
               </p>
 
-              <a href="#" className="more-link">
-                More about us →
+              <a href="#" className="more-link" link="https://fs-alpeadria.com/">
+                More about formula student →
               </a>
             </div>
           </section>
 
 
           <SponsorScroll></SponsorScroll>
+          <SponsorScrollV2></SponsorScrollV2>
         </section>
 
       </main>

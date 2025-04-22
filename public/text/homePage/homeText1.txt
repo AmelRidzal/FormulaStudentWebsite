@@ -1,2 +1,9 @@
-Our team, the "UNSA RACING" of the University of Sarajevo, was founded in February 2025. Since then, our team has grown to around 70 members, representing a wide variety of disciplines, including mechanical engineering, computer science, electrical engineering, industrial engineering, business administration, information technology and design, biomedical engineering, architecture, and hearing acoustics. Our primary goal is to build a new racing car for the upcoming competitions. This car will be built according to the specifications of "Formula Student," the largest international design competition for students. We are driven not only by our fascination with racing, but also by an incredible team spirit, which contributes significantly to the individual development of each team member and their development into true experts in their field.
-          
+The UNSA Racing Team is a formula student team situated at the University of Sarajevo. 
+Founded in 2024, our team consists of passionate students driven by a shared enthusiasm for motorsports 
+and automotive innovation. Our participation in the Formula Student competition marks a significant 
+milestone in our journey to apply theoretical knowledge to real-world engineering challenges.
+
+The student team is closely aligned with the academic goals of the University. 
+Our involvement in the competition complements classroom learning by offering students the opportunity 
+to apply theoretical concepts in a real-world context. Through participation in Formula Student, students 
+enhance their problem-solving abilities, critical thinking skills, and technical expertise.
