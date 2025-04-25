@@ -19,21 +19,25 @@
     padding: 2rem;
     text-align: center;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-size 0.5s ease;
+    background-size: 300% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.teammember-card,
+.teammember-card * {
+    transition: color 0.3s ease;
 }
 
 .teammember-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+    background-image: linear-gradient(to right, var(--logo-blue) 0%,  var(--logo-blue) 33.33%, #ffffff 47%, #ffffff 53%,  var(--logo-yellow) 66.66%, var(--logo-yellow) 100%);
+    color: #000; /* or a color that stands out well */
 }
 
-.teammember-image {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 1rem;
-    margin-bottom: 1rem;
-}
+
 
 .text-left {
     text-align: left;
@@ -47,4 +51,46 @@
     padding-left: 1rem;
 }
 
+.teammember-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+    transition: opacity 0.3s ease;
+}
 
+.teammember-image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    margin: 0 auto 1rem auto;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+
+
+/* Base (main) image: black & white */
+.base-image {
+    filter: grayscale(100%);
+    z-index: 1;
+}
+
+/* Hover (red) image */
+.hover-image {
+    /*filter: grayscale(100%) sepia(100%) hue-rotate(-50deg) saturate(600%);*/
+    opacity: 0;
+    z-index: 2;
+}
+
+/* Show red image on hover */
+.teammember-card:hover .hover-image {
+    opacity: 1;
+}
+
+.teammember-card:hover .base-image {
+    opacity: 0;
+}

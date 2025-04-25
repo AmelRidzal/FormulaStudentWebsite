@@ -5,6 +5,9 @@ import '../css/Subteam.css';
 import Teammembers from './TeamMemberCard.js'
 
 import TheBoys from '../assets/KoJeRadio(TaZenskaNije).PNG';
+import AmelHover from '../assets/DSC_0275.jpg';
+import EdisHover from '../assets/edis.jpg';
+import BenjoHover from '../assets/benjo.jpg';
 
 function Subteam() {
     const member1 = {
@@ -49,6 +52,7 @@ function Subteam() {
                 <div className="teammember-grid">
                 <Teammembers
                     image={member1.image}
+                    hoverImage={AmelHover}
                     name={member1.name}
                     age={member1.age}
                     collage={member1.collage}
@@ -57,6 +61,7 @@ function Subteam() {
                 />
                 <Teammembers
                     image={member2.image}
+                    hoverImage={EdisHover}
                     name={member2.name}
                     age={member2.age}
                     collage={member2.collage}
@@ -65,6 +70,7 @@ function Subteam() {
                 />
                 <Teammembers
                     image={member3.image}
+                    hoverImage={BenjoHover}
                     name={member3.name}
                     age={member3.age}
                     collage={member3.collage}

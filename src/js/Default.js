@@ -75,7 +75,7 @@ const navigate = useNavigate();
 
           <section className="about-section">
             <div className="text-container">
-              <h3 className="subtitle">University of Sarajevo</h3>
+              <h3 className="subtitle">Udruzenje studenata Univerziteta u Sarajevu "UNSA RT"</h3>
               <h2 className="title">UNSA 
                  <span className="highlight">RACING</span>
               </h2>
@@ -171,7 +171,6 @@ const navigate = useNavigate();
               <img src={FormulaStudentPic} alt="slika" />
             </div>
             <div className="text-container">
-              <h3 className="subtitle">University of Sarajevo</h3>
               <h2 className="title">What is 
               <span className="highlight">Formula Student?</span>
               </h2>
