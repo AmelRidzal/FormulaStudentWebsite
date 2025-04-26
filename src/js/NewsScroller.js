@@ -12,7 +12,7 @@ export default function Sponsors() {
       <div class="news-slider-wrapper">
         <div class="news-slider slide-1">
           <div class="item">
-            <a href="#">
+            <a href="/">
               <UpdateCard
                 image="https://www.datocms-assets.com/53444/1668448307-formula-student-aixtreme-racing-team.jpg?auto=format&fit=max&w=1024"
                 description="Engine finally started"
@@ -20,7 +20,7 @@ export default function Sponsors() {
             </a>
           </div>
           <div class="item">
-            <a href="#">
+            <a href="/">
               <UpdateCard
                 image="https://www.datocms-assets.com/53444/1668448307-formula-student-aixtreme-racing-team.jpg?auto=format&fit=max&w=1024"
                 description="Engine finally started"
@@ -28,7 +28,7 @@ export default function Sponsors() {
             </a>
           </div>
           <div class="item">
-            <a href="#">
+            <a href="/">
               <UpdateCard
                 image="https://www.datocms-assets.com/53444/1668448307-formula-student-aixtreme-racing-team.jpg?auto=format&fit=max&w=1024"
                 description="Engine finally started"
@@ -36,7 +36,7 @@ export default function Sponsors() {
             </a>
           </div>
           <div class="item">
-            <a href="#">
+            <a href="/">
               <UpdateCard
                 image="https://www.datocms-assets.com/53444/1668448307-formula-student-aixtreme-racing-team.jpg?auto=format&fit=max&w=1024"
                 description="Engine finally started"
@@ -44,7 +44,7 @@ export default function Sponsors() {
             </a>
           </div>
           <div class="item">
-            <a href="#">
+            <a href="/">
               <UpdateCard
                 image="https://www.datocms-assets.com/53444/1668448307-formula-student-aixtreme-racing-team.jpg?auto=format&fit=max&w=1024"
                 description="Engine finally started"
@@ -52,7 +52,7 @@ export default function Sponsors() {
             </a>
           </div>
           <div class="item">
-            <a href="#">
+            <a href="/">
               <UpdateCard
                 image="https://www.datocms-assets.com/53444/1668448307-formula-student-aixtreme-racing-team.jpg?auto=format&fit=max&w=1024"
                 description="Engine finally started"
@@ -62,7 +62,7 @@ export default function Sponsors() {
         </div>
         <div class="news-slider slide-2">
           <div class="item">
-            <a href="#">
+            <a href="/">
               <UpdateCard
                 image="https://www.datocms-assets.com/53444/1668448307-formula-student-aixtreme-racing-team.jpg?auto=format&fit=max&w=1024"
                 description="Engine finally started"
@@ -70,7 +70,7 @@ export default function Sponsors() {
             </a>
           </div>
           <div class="item">
-            <a href="#">
+            <a href="/">
               <UpdateCard
                 image="https://www.datocms-assets.com/53444/1668448307-formula-student-aixtreme-racing-team.jpg?auto=format&fit=max&w=1024"
                 description="Engine finally started"
@@ -78,7 +78,7 @@ export default function Sponsors() {
             </a>
           </div>
           <div class="item">
-            <a href="#">
+            <a href="/">
               <UpdateCard
                 image="https://www.datocms-assets.com/53444/1668448307-formula-student-aixtreme-racing-team.jpg?auto=format&fit=max&w=1024"
                 description="Engine finally started"
@@ -86,7 +86,7 @@ export default function Sponsors() {
             </a>
           </div>
           <div class="item">
-            <a href="#">
+            <a href="/">
               <UpdateCard
                 image="https://www.datocms-assets.com/53444/1668448307-formula-student-aixtreme-racing-team.jpg?auto=format&fit=max&w=1024"
                 description="Engine finally started"
@@ -94,7 +94,7 @@ export default function Sponsors() {
             </a>
           </div>
           <div class="item">
-            <a href="#">
+            <a href="/">
               <UpdateCard
                 image="https://www.datocms-assets.com/53444/1668448307-formula-student-aixtreme-racing-team.jpg?auto=format&fit=max&w=1024"
                 description="Engine finally started"
@@ -102,7 +102,7 @@ export default function Sponsors() {
             </a>
           </div>
           <div class="item">
-            <a href="#">
+            <a href="/">
               <UpdateCard
                 image="https://www.datocms-assets.com/53444/1668448307-formula-student-aixtreme-racing-team.jpg?auto=format&fit=max&w=1024"
                 description="Engine finally started"

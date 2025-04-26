@@ -17,52 +17,52 @@ export default function Sponsors() {
             <div class="sponsor-slider-wrapper">
                 <div class="sponsor-slider slide-1">
                     <div class="item">
-                        <a href="#">
+                        <a href="/">
                             <img src={Dragon} alt="img" />
                         </a>
                     </div>
                     <div class="item">
-                        <a href="#">
+                        <a href="/">
                             <img src={Facebook} alt="img" />
                         </a>
                     </div>
                     <div class="item">
-                        <a href="#">
+                        <a href="/">
                             <img src={Instagram} alt="img" />
                         </a>
                     </div>
                     <div class="item">
-                        <a href="#">
+                        <a href="/">
                             <img src={Linkedin} alt="img" />
                         </a>
                     </div>
                     <div class="item">
-                        <a href="#">
+                        <a href="/">
                             <img src={Logo} alt="img" />
                         </a>
                     </div>
                     <div class="item">
-                        <a href="#">
+                        <a href="/">
                             <img src={Youtube} alt="img" />
                         </a>
                     </div>
                     <div class="item">
-                        <a href="#">
+                        <a href="/">
                             <img src={Dragon} alt="img" />
                         </a>
                     </div>
                     <div class="item">
-                        <a href="#">
+                        <a href="/">
                             <img src={Facebook} alt="img" />
                         </a>
                     </div>
                     <div class="item">
-                        <a href="#">
+                        <a href="/">
                             <img src={Instagram} alt="img" />
                         </a>
                     </div>
                     <div class="item">
-                        <a href="#">
+                        <a href="/">
                             <img src={Linkedin} alt="img" />
                         </a>
                     </div>
@@ -70,52 +70,52 @@ export default function Sponsors() {
 
                 <div class="sponsor-slider slide-2">
                     <div class="item">
-                        <a href="#">
+                        <a href="/">
                             <img src={Dragon} alt="img" />
                         </a>
                     </div>
                     <div class="item">
-                        <a href="#">
+                        <a href="/">
                             <img src={Facebook} alt="img" />
                         </a>
                     </div>
                     <div class="item">
-                        <a href="#">
+                        <a href="/">
                             <img src={Instagram} alt="img" />
                         </a>
                     </div>
                     <div class="item">
-                        <a href="#">
+                        <a href="/">
                             <img src={Linkedin} alt="img" />
                         </a>
                     </div>
                     <div class="item">
-                        <a href="#">
+                        <a href="/">
                             <img src={Logo} alt="img" />
                         </a>
                     </div>
                     <div class="item">
-                        <a href="#">
+                        <a href="/">
                             <img src={Youtube} alt="img" />
                         </a>
                     </div>
                     <div class="item">
-                        <a href="#">
+                        <a href="/">
                             <img src={Dragon} alt="img" />
                         </a>
                     </div>
                     <div class="item">
-                        <a href="#">
+                        <a href="/">
                             <img src={Facebook} alt="img" />
                         </a>
                     </div>
                     <div class="item">
-                        <a href="#">
+                        <a href="/">
                             <img src={Instagram} alt="img" />
                         </a>
                     </div>
                     <div class="item">
-                        <a href="#">
+                        <a href="/">
                             <img src={Linkedin} alt="img" />
                         </a>
                     </div>

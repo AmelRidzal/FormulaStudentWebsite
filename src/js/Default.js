@@ -83,7 +83,7 @@ const navigate = useNavigate();
                 <HomeText1 />
               </p>
 
-              <a href="#" className="more-link">
+              <a href="/" className="more-link">
                 More about us →
               </a>
             </div>
@@ -178,7 +178,7 @@ const navigate = useNavigate();
                 <HomeText2 />
               </p>
 
-              <a href="#" className="more-link" link="https://fs-alpeadria.com/">
+              <a href="/" className="more-link" link="https://fs-alpeadria.com/">
                 More about formula student →
               </a>
             </div>
