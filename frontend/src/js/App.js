@@ -2,12 +2,12 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
-import FbxViewer from '../js/FbxViewer';
+import FbxViewer from './FbxViewer.js';
 import Default from './Default.js'
 import Picturs from './Picturs.js'
 import News from './News.js'
 import Sponsors from './Sponsors.js'
-import Navbar from './Navbar';
+import Navbar from './Navbar.js';
 import Footer from './Footer.js';
 import Subteam from './Subteam.js';
 

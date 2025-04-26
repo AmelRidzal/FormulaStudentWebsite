@@ -1,6 +1,6 @@
 import Style from '../css/Sponsors.css'
 import Logo from '../assets/R.jpg'
-import SponsorScroll from '../js/SponsorScroller'
+import SponsorScroll from './SponsorScroller'
 
 import '../css/Collors.css';
 

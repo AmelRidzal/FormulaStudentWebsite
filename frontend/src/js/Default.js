@@ -3,8 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import TeamPic from '../assets/TeamPic.jpg'
 import FormulaStudentPic from '../assets/industrial_website_png.png'
 import MainPic from '../assets/lum-silverstone-main.jpg'
-import SponsorScroll from '../js/SponsorScroller'
-import SponsorScrollV2 from '../js/SponsorScrollerV2'
+import SponsorScroll from './SponsorScroller'
+import SponsorScrollV2 from './SponsorScrollerV2'
 import logo from '../assets/logoNoText.png';
 
 import '../css/Default.css';
