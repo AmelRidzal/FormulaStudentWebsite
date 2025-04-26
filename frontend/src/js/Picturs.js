@@ -7,8 +7,7 @@ const Pictures = () => {
   const [images, setImages] = useState([]);
 
   useEffect(() => {
-    // 🚀 Change this to your live Railway backend URL
-    const backendURL = 'http://localhost:3001'; 
+    const backendURL = process.env.REACT_APP_BACKEND_URL;
 
     fetch(`${backendURL}/api/gallery`)
       .then(res => res.json())

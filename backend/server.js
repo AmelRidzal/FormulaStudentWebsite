@@ -1,3 +1,7 @@
+// server.js
+
+require('dotenv').config(); // Load environment variables
+
 const express = require('express');
 const path = require('path');
 const fs = require('fs');
@@ -6,12 +10,18 @@ const cors = require('cors');
 const app = express();
 const PORT = process.env.PORT || 3001;
 
+// Enable CORS
 app.use(cors());
 
-// Serve static files (images) from a public folder
+// Serve static images from the 'public/images' folder
 app.use('/images', express.static(path.join(__dirname, 'public/images')));
 
-// Endpoint to list all images
+// Health check endpoint (optional but recommended)
+app.get('/health', (req, res) => {
+  res.status(200).send('Server is healthy');
+});
+
+// API endpoint to list all images
 app.get('/api/gallery', (req, res) => {
   const imagesDirectory = path.join(__dirname, 'public/images');
 
@@ -21,11 +31,14 @@ app.get('/api/gallery', (req, res) => {
       return res.status(500).json({ error: 'Failed to load images' });
     }
 
-    const imageUrls = files.map(file => `${req.protocol}://${req.get('host')}/images/${file}`);
+    const baseUrl = process.env.BASE_URL || `${req.protocol}://${req.get('host')}`;
+
+    const imageUrls = files.map(file => `${baseUrl}/images/${file}`);
     res.json(imageUrls);
   });
 });
 
+// Start the server
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
