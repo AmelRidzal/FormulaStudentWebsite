@@ -1,5 +1,3 @@
-// server.js
-
 require('dotenv').config(); // Load environment variables
 
 const express = require('express');
@@ -16,7 +14,7 @@ app.use(cors());
 // Serve static images from the 'public/images' folder
 app.use('/images', express.static(path.join(__dirname, 'public/images')));
 
-// Health check endpoint (optional but recommended)
+// Health check endpoint
 app.get('/health', (req, res) => {
   res.status(200).send('Server is healthy');
 });
@@ -31,6 +29,7 @@ app.get('/api/gallery', (req, res) => {
       return res.status(500).json({ error: 'Failed to load images' });
     }
 
+    // If you are deployed (Railway), use process.env.BASE_URL
     const baseUrl = process.env.BASE_URL || `${req.protocol}://${req.get('host')}`;
 
     const imageUrls = files.map(file => `${baseUrl}/images/${file}`);
