@@ -7,7 +7,7 @@ const Pictures = () => {
   const [images, setImages] = useState([]);
 
   useEffect(() => {
-    const backendURL = process.env.REACT_APP_BACKEND_URL;
+    const backendURL = process.env.BACKEND_URL;
 
     fetch(`${backendURL}/api/gallery`)
       .then(res => res.json())
