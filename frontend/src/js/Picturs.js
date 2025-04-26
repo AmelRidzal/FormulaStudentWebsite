@@ -7,7 +7,10 @@ const Pictures = () => {
   const [images, setImages] = useState([]);
 
   useEffect(() => {
-    fetch('/api/gallery')
+    // 🚀 Change this to your live Railway backend URL
+    const backendURL = 'http://localhost:3001'; 
+
+    fetch(`${backendURL}/api/gallery`)
       .then(res => res.json())
       .then(data => {
         if (Array.isArray(data)) {
@@ -18,7 +21,6 @@ const Pictures = () => {
       })
       .catch(err => console.error("Failed to load images", err));
   }, []);
-
 
   return (
     <div className="gallery-container">
