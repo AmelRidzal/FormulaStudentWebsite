@@ -4,6 +4,7 @@ import '../css/Collors.css';
 function Footer() {
   return (
     <footer className="footer">
+      <h3 >Udruzenje studenata Univerziteta u Sarajevu "UNSA RT"</h3>
       <div className="footer-content">
 
         <div className="footer-section">

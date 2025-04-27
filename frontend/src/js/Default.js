@@ -46,7 +46,7 @@ function Home() {
 
           <section className="about-section">
             <div className="text-container">
-              <h3 className="subtitle">Udruzenje studenata Univerziteta u Sarajevu "UNSA RT"</h3>
+              {/*<h3 className="subtitle">Udruzenje studenata Univerziteta u Sarajevu "UNSA RT"</h3>*/}
               <h2 className="title">UNSA
                 <span className="highlight">RACING</span>
               </h2>
@@ -165,7 +165,7 @@ function Home() {
 
 
           <SponsorScroll></SponsorScroll>
-          <SponsorScrollV2></SponsorScrollV2>
+          {/*<SponsorScrollV2></SponsorScrollV2>*/}
         </section>
 
       </main>
