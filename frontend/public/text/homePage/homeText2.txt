@@ -1,9 +1,0 @@
-Formula Student is a global engineering competition that challenges university students to design, 
-build, and race in a formula-style event. Teams from all around the world participate in this annual 
-event, showcasing their skills and knowledge in areas such as design, manufacturing, testing, 
-and business presentation.
-
-The competition not only emphasizes the technical aspects of building a high-performance race 
-car but also encourages students to develop project management and teamwork skills. 
-Participants must adhere to strict rules and regulations while pushing the boundaries of 
-innovation to create a competitive vehicle.

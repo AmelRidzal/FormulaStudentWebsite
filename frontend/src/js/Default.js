@@ -14,40 +14,11 @@ import '../css/SponsorScroller.css';
 import '../css/SponsorScrollerV2.css';
 
 
-
-
-
 function Home() {
 
 
-  // /src/components/DefaultText1.js
 
-const HomeText1 = () => {
-  const [text, setText] = useState('');
-
-  useEffect(() => {
-    fetch('/api/homeText1')
-      .then((res) => res.json())
-      .then((data) => setText(data.text))
-      .catch((err) => console.error('Error fetching text:', err));
-  }, []);
-
-  return <span>{text}</span>;
-};
-
-const HomeText2 = () => {
-  const [text, setText] = useState('');
-
-  useEffect(() => {
-    fetch('/api/homeText2')
-      .then((res) => res.json())
-      .then((data) => setText(data.text))
-      .catch((err) => console.error('Error fetching text:', err));
-  }, []);
-
-  return <span>{text}</span>;
-};
-const navigate = useNavigate();
+  const navigate = useNavigate();
 
   return (
     <div className="App">
@@ -76,11 +47,19 @@ const navigate = useNavigate();
           <section className="about-section">
             <div className="text-container">
               <h3 className="subtitle">Udruzenje studenata Univerziteta u Sarajevu "UNSA RT"</h3>
-              <h2 className="title">UNSA 
-                 <span className="highlight">RACING</span>
+              <h2 className="title">UNSA
+                <span className="highlight">RACING</span>
               </h2>
               <p className="description">
-                <HomeText1 />
+                The UNSA Racing Team is a formula student team situated at the University of Sarajevo.
+                Founded in 2024, our team consists of passionate students driven by a shared enthusiasm for motorsports
+                and automotive innovation. Our participation in the Formula Student competition marks a significant
+                milestone in our journey to apply theoretical knowledge to real-world engineering challenges.
+
+                The student team is closely aligned with the academic goals of the University.
+                Our involvement in the competition complements classroom learning by offering students the opportunity
+                to apply theoretical concepts in a real-world context. Through participation in Formula Student, students
+                enhance their problem-solving abilities, critical thinking skills, and technical expertise.
               </p>
 
               <a href="/" className="more-link">
@@ -118,13 +97,13 @@ const navigate = useNavigate();
                   title: 'POWERTRAIN',
                   icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZGSKLUE2XO9JfbO7DC8w_Z3J-nfxOW4NFuKSZSNWPNVCmSIilurcBbqrmkcUnlgag3cI&usqp=CAU',
                   desc: 'Design and study of an introduction system with the help of computational fluid mechanics programs.',
-                  linkto:"/subteam"
+                  linkto: "/subteam"
                 },
                 {
                   title: 'DRIVETRAIN',
                   icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZGSKLUE2XO9JfbO7DC8w_Z3J-nfxOW4NFuKSZSNWPNVCmSIilurcBbqrmkcUnlgag3cI&usqp=CAU',
                   desc: 'Responsible for all the mechanisms and components used to transmit power from the engine to the driving axle.',
-                  linkto:"/subteam"
+                  linkto: "/subteam"
                 },
                 {
                   title: 'SUSPENSION',
@@ -136,19 +115,19 @@ const navigate = useNavigate();
                       • Steering analysis
                     </>
                   ),
-                  linkto:"/subteam"
+                  linkto: "/subteam"
                 },
                 {
                   title: 'ELECTRONICS',
                   icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZGSKLUE2XO9JfbO7DC8w_Z3J-nfxOW4NFuKSZSNWPNVCmSIilurcBbqrmkcUnlgag3cI&usqp=CAU',
                   desc: 'The subgroup electronics are responsible for development of critical electronic systems in the car.',
-                  linkto:"/subteam"
+                  linkto: "/subteam"
                 }
               ].map((item, idx) => (
-                <div key={idx} 
-                className="subteam-card" 
-                onClick={() => navigate(item.linkto)}
-                style={{ cursor: "pointer" }}>
+                <div key={idx}
+                  className="subteam-card"
+                  onClick={() => navigate(item.linkto)}
+                  style={{ cursor: "pointer" }}>
                   <img src={item.icon} alt={item.title} className="h-12 mx-auto mb-4" />
                   <h3 className="text-xl font-bold mb-2">{item.title}</h3>
                   <p className="text-sm text-gray-600 mb-4">{item.desc}</p>
@@ -158,24 +137,24 @@ const navigate = useNavigate();
             </div>
           </section>
 
-
-
-
-
-
-
-
-
           <section className="about-section">
             <div className="image-container">
               <img src={FormulaStudentPic} alt="slika" />
             </div>
             <div className="text-container">
-              <h2 className="title">What is 
-              <span className="highlight">Formula Student?</span>
+              <h2 className="title">What is
+                <span className="highlight">Formula Student?</span>
               </h2>
               <p className="description">
-                <HomeText2 />
+                Formula Student is a global engineering competition that challenges university students to design,
+                build, and race in a formula-style event. Teams from all around the world participate in this annual
+                event, showcasing their skills and knowledge in areas such as design, manufacturing, testing,
+                and business presentation.
+
+                The competition not only emphasizes the technical aspects of building a high-performance race
+                car but also encourages students to develop project management and teamwork skills.
+                Participants must adhere to strict rules and regulations while pushing the boundaries of
+                innovation to create a competitive vehicle.
               </p>
 
               <a href="/" className="more-link" link="https://fs-alpeadria.com/">

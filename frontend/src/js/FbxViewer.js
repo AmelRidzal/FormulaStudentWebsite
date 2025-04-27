@@ -1,4 +1,3 @@
-// src/js/FbxViewer.js
 import React, { useState, Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { useGLTF, Stage, PresentationControls } from '@react-three/drei';
