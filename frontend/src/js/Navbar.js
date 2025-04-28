@@ -19,7 +19,7 @@ const Navbar = () => {
         <li><Link to="/subteam">Subteams</Link></li>
         <li><Link to="/pics">Pictures</Link></li>
         <li><Link to="/fbx">3D Model</Link></li>
-        <li><Link to="/sponsors">Sponsors</Link></li>
+        {/*<li><Link to="/sponsors">Sponsors</Link></li>*/}
         </ul>
   <div className="navbar-right" /> {/* Empty div to balance the left side */}
 </nav>
