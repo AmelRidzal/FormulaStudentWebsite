@@ -165,7 +165,6 @@ function Home() {
 
 
           {<SponsorScroll></SponsorScroll>}
-          {/*<SponsorScrollV2></SponsorScrollV2>*/}
         </section>
 
       </main>

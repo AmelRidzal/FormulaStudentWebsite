@@ -2,6 +2,10 @@ import Style from '../css/Sponsors.css'
 import Logo from '../assets/R.jpg'
 import SponsorScroll from './SponsorScroller'
 
+
+import ansys from '../assets/ansys.png';
+import matlab from '../assets/matlab.png';
+
 import '../css/Collors.css';
 
 export default function Sponsors() {
@@ -30,56 +34,27 @@ export default function Sponsors() {
             <div className="SponsorsDisplay">
                 <div className="Sponsors-grid-container">
                     <div className="Sponsors-grid-item">
-                        <img src={Logo} className="Sponsors-logo" alt='slika'></img>
+                        <img src="https://racingarena.ba/wp-content/uploads/2024/03/racing-arena-logo-FINAL-02.png" className="Sponsors-logo" alt='slika'></img>
                         <div className="Sponsor-overlay">
-                            <p>Company name<br />Sponsor type</p>
+                            <p>Racing arena<br />Main sponsor</p>
                         </div>
                     </div>
                     <div className="Sponsors-grid-item">
-                        <img src={Logo} className="Sponsors-logo" alt='slika'></img>
+                        <img src="https://www.3ds.com/assets/3ds-navigation/3DS_corporate-logo_solidworks.svg" className="Sponsors-logo" alt='slika'></img>
                         <div className="Sponsor-overlay">
-                            <p>Company name<br />Sponsor type</p>
+                            <p>3DS<br />Main sponsor</p>
                         </div>
                     </div>
                     <div className="Sponsors-grid-item">
-                        <img src={Logo} className="Sponsors-logo" alt='slika'></img>
+                        <img src={ansys} className="Sponsors-logo" alt='slika'></img>
                         <div className="Sponsor-overlay">
-                            <p>Company name<br />Sponsor type</p>
+                            <p>ansys<br />Main sponsors</p>
                         </div>
                     </div>
                     <div className="Sponsors-grid-item">
-                        <img src={Logo} className="Sponsors-logo" alt='slika'></img>
+                        <img src={matlab} className="Sponsors-logo" alt='slika'></img>
                         <div className="Sponsor-overlay">
-                            <p>Company name<br />Sponsor type</p>
-                        </div>
-                    </div>
-                    <div className="Sponsors-grid-item">
-                        <img src={Logo} className="Sponsors-logo" alt='slika'></img>
-                        <div className="Sponsor-overlay">
-                            <p>Company name<br />Sponsor type</p>
-                        </div>
-                    </div>
-                    <div className="Sponsors-grid-item">
-                        <img src={Logo} className="Sponsors-logo" alt='slika'></img>
-                        <div className="Sponsor-overlay">
-                            <p>Company name<br />Sponsor type</p>
-                        </div>
-                    </div>
-                    <div className="Sponsors-grid-item">
-                        <img src={Logo} className="Sponsors-logo" alt='slika'></img>
-                        <div className="Sponsor-overlay">
-                            <p>Company name<br />Sponsor type</p>
-                        </div>
-                    </div>
-                    <div className="Sponsors-grid-item">
-                        <img src={Logo} className="Sponsors-logo" alt='slika'></img>
-                        <div className="Sponsor-overlay">
-                            <p>Company name<br />Sponsor type</p>
-                        </div>
-                    </div><div className="Sponsors-grid-item">
-                        <img src={Logo} className="Sponsors-logo" alt='slika'></img>
-                        <div className="Sponsor-overlay">
-                            <p>Company name<br />Sponsor type</p>
+                            <p>MatLab<br />Main sponsor</p>
                         </div>
                     </div>
                 </div>
