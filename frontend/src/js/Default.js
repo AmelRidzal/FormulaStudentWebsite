@@ -164,7 +164,7 @@ function Home() {
           </section>
 
 
-          {/*<SponsorScroll></SponsorScroll>*/}
+          {<SponsorScroll></SponsorScroll>}
           {/*<SponsorScrollV2></SponsorScrollV2>*/}
         </section>
 

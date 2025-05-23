@@ -1,5 +1,7 @@
 import '../css/SponsorScroller.css'
 import '../css/Collors.css';
+import ansys from '../assets/ansys.png';
+import matlab from '../assets/matlab.png';
 
 export default function Sponsors() {
 
@@ -11,104 +13,124 @@ export default function Sponsors() {
                 <div class="sponsor-slider slide-1">
                     <div class="item">
                         <a href="/">
-                            <img src="https://www.pngarts.com/files/3/Logo-PNG-Image-Background.png" alt="img" />
+                            <img src="https://racingarena.ba/wp-content/uploads/2024/03/racing-arena-logo-FINAL-02.png" alt="img" />
                         </a>
                     </div>
                     <div class="item">
                         <a href="/">
-                            <img src="https://logodownload.org/wp-content/uploads/2020/10/garena-logo.png" alt="img" />
+                            <img src="https://www.3ds.com/assets/3ds-navigation/3DS_corporate-logo_solidworks.svg" alt="img" />
                         </a>
                     </div>
                     <div class="item">
                         <a href="/">
-                            <img src="https://pngimg.com/uploads/nike/nike_PNG12.png" alt="img" />
+                            <img src={matlab} alt="img" />
                         </a>
                     </div>
                     <div class="item">
                         <a href="/">
-                            <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_CMYK_Green.png" alt="img" />
+                            <img src={ansys} alt="img" />
                         </a>
                     </div>
                     <div class="item">
                         <a href="/">
-                            <img src="http://assets.stickpng.com/images/585990234f6ae202fedf28cf.png" alt="img" />
+                            <img src="https://racingarena.ba/wp-content/uploads/2024/03/racing-arena-logo-FINAL-02.png" alt="img" />
                         </a>
                     </div>
                     <div class="item">
                         <a href="/">
-                            <img src="https://logos-world.net/wp-content/uploads/2021/02/Sky-Logo.png" alt="img" />
+                            <img src="https://www.3ds.com/assets/3ds-navigation/3DS_corporate-logo_solidworks.svg" alt="img" />
                         </a>
                     </div>
                     <div class="item">
                         <a href="/">
-                            <img src="https://purepng.com/public/uploads/large/purepng.com-disney-logologobrand-logoiconslogos-251519939495wtv86.png" alt="img" />
+                            <img src={matlab} alt="img" />
                         </a>
                     </div>
                     <div class="item">
                         <a href="/">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/7/75/Arena_of_Valor_logo.png" alt="img" />
+                            <img src={ansys} alt="img" />
                         </a>
                     </div>
                     <div class="item">
                         <a href="/">
-                            <img src="https://www.pngall.com/wp-content/uploads/2016/06/Superman-Logo-Free-Download-PNG.png" alt="img" />
+                            <img src="https://racingarena.ba/wp-content/uploads/2024/03/racing-arena-logo-FINAL-02.png" alt="img" />
                         </a>
                     </div>
                     <div class="item">
                         <a href="/">
-                            <img src="https://blackpinkupdate.com/wp-content/uploads/2020/06/BLACKPINK-Logo-PNG-Transparent-Black.png" alt="img" />
+                            <img src="https://www.3ds.com/assets/3ds-navigation/3DS_corporate-logo_solidworks.svg" alt="img" />
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="/">
+                            <img src={matlab} alt="img" />
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="/">
+                            <img src={ansys} alt="img" />
                         </a>
                     </div>
                 </div>
                 <div class="sponsor-slider slide-2">
                     <div class="item">
                         <a href="/">
-                            <img src="https://www.pngarts.com/files/3/Logo-PNG-Image-Background.png" alt="img" />
+                            <img src="https://racingarena.ba/wp-content/uploads/2024/03/racing-arena-logo-FINAL-02.png" alt="img" />
                         </a>
                     </div>
                     <div class="item">
                         <a href="/">
-                            <img src="https://logodownload.org/wp-content/uploads/2020/10/garena-logo.png" alt="img" />
+                            <img src="https://www.3ds.com/assets/3ds-navigation/3DS_corporate-logo_solidworks.svg" alt="img" />
                         </a>
                     </div>
                     <div class="item">
                         <a href="/">
-                            <img src="https://pngimg.com/uploads/nike/nike_PNG12.png" alt="img" />
+                            <img src={matlab} alt="img" />
                         </a>
                     </div>
                     <div class="item">
                         <a href="/">
-                            <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_CMYK_Green.png" alt="img" />
+                            <img src={ansys} alt="img" />
                         </a>
                     </div>
                     <div class="item">
                         <a href="/">
-                            <img src="http://assets.stickpng.com/images/585990234f6ae202fedf28cf.png" alt="img" />
+                            <img src="https://racingarena.ba/wp-content/uploads/2024/03/racing-arena-logo-FINAL-02.png" alt="img" />
                         </a>
                     </div>
                     <div class="item">
                         <a href="/">
-                            <img src="https://logos-world.net/wp-content/uploads/2021/02/Sky-Logo.png" alt="img" />
+                            <img src="https://www.3ds.com/assets/3ds-navigation/3DS_corporate-logo_solidworks.svg" alt="img" />
                         </a>
                     </div>
                     <div class="item">
                         <a href="/">
-                            <img src="https://purepng.com/public/uploads/large/purepng.com-disney-logologobrand-logoiconslogos-251519939495wtv86.png" alt="img" />
+                            <img src={matlab} alt="img" />
                         </a>
                     </div>
                     <div class="item">
                         <a href="/">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/7/75/Arena_of_Valor_logo.png" alt="img" />
+                            <img src={ansys} alt="img" />
                         </a>
                     </div>
                     <div class="item">
                         <a href="/">
-                            <img src="https://www.pngall.com/wp-content/uploads/2016/06/Superman-Logo-Free-Download-PNG.png" alt="img" />
+                            <img src="https://racingarena.ba/wp-content/uploads/2024/03/racing-arena-logo-FINAL-02.png" alt="img" />
                         </a>
                     </div>
                     <div class="item">
                         <a href="/">
-                            <img src="https://blackpinkupdate.com/wp-content/uploads/2020/06/BLACKPINK-Logo-PNG-Transparent-Black.png" alt="img" />
+                            <img src="https://www.3ds.com/assets/3ds-navigation/3DS_corporate-logo_solidworks.svg" alt="img" />
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="/">
+                            <img src={matlab} alt="img" />
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="/">
+                            <img src={ansys} alt="img" />
                         </a>
                     </div>
                 </div>
