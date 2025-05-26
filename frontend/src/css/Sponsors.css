@@ -143,3 +143,54 @@
 .Sponsors-grid-item:hover .Sponsor-overlay {
   opacity: 1;
 }
+
+
+
+/* Modal styling */
+.ModalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(17, 17, 17, 0.7);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.ModalContent {
+  background-color: white;
+  padding: 40px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  font-family: sans-serif;
+  position: relative;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+.ModalContent h2 {
+  margin-top: 0;
+  color: #b7342e;
+}
+
+.ModalCloseBtn {
+  margin-top: 20px;
+  background-color: #b7342e;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.ModalCloseBtn:hover {
+  background-color: #a22e28;
+}
+

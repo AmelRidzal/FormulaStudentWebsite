@@ -9,7 +9,7 @@ function Footer() {
 
         <div className="footer-section">
           <h3>Contact</h3>
-          <p>Email: contact@fs-team.com</p>
+          <p>Email: support@unsaracing.com</p>
           <p>Phone: +387 61 123 456</p>
         </div>
 
