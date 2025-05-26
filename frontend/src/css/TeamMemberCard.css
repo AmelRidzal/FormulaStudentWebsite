@@ -1,96 +1,95 @@
-.teammember {
-    background-color: #292424;
-    padding: 4rem 2rem;
-    min-height: 100vh;
+.card-container {
+    perspective: 1000px;
     width: 100%;
+    max-width: 100%;
+    height: 500px; /* fixed height for consistent flip effect */
+    position: relative;
 }
 
-.teammember-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
 }
 
-.teammember-card {
-    background-color: #fff;
-    border-radius: 1.5rem;
-    padding: 2rem;
-    text-align: center;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background-size 0.5s ease;
-    background-size: 300% 100%;
-    background-position: center;
-    background-repeat: no-repeat;
+.card-container:hover .card-inner {
+    transform: rotateY(180deg);
 }
 
-.teammember-card,
-.teammember-card * {
-    transition: color 0.3s ease;
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 1rem;
+    overflow: hidden;
+    top: 0;
+    left: 0;
 }
 
-.teammember-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
-    background-image: linear-gradient(to right, var(--logo-blue) 0%,  var(--logo-blue) 33.33%, #ffffff 47%, #ffffff 53%,  var(--logo-yellow) 66.66%, var(--logo-yellow) 100%);
-    color: #000; /* or a color that stands out well */
+.card-front {
+    z-index: 2;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    position: relative;
+    padding: 0; /* Remove padding if any */
 }
 
 
-
-.text-left {
-    text-align: left;
+.card-back {
+    background-color: white;
+    transform: rotateY(180deg);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
 }
 
-.list-disc {
-    list-style-type: disc;
+.card-image {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    display: block;
 }
 
-.list-inside {
-    padding-left: 1rem;
+.grayscale {
+    filter: grayscale(100%);
 }
 
-.teammember-image {
+.member-name-overlay {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.card-info {
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #222;
+    width: 100%;
+    height: 40%;
+    overflow-y: auto;
+}
+.card-front .card-image.grayscale {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 1rem;
-    transition: opacity 0.3s ease;
 }
 
-.teammember-image-wrapper {
-    position: relative;
-    width: 100%;
-    height: 200px;
-    margin: 0 auto 1rem auto;
-    border-radius: 1rem;
-    overflow: hidden;
-}
-
-
-
-/* Base (main) image: black & white */
-.base-image {
-    filter: grayscale(100%);
-    z-index: 1;
-}
-
-/* Hover (red) image */
-.hover-image {
-    /*filter: grayscale(100%) sepia(100%) hue-rotate(-50deg) saturate(600%);*/
-    opacity: 0;
-    z-index: 2;
-}
-
-/* Show red image on hover */
-.teammember-card:hover .hover-image {
-    opacity: 1;
-}
-
-.teammember-card:hover .base-image {
-    opacity: 0;
+.text{
+    padding-left: 1rem;
 }

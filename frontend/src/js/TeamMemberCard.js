@@ -6,25 +6,28 @@ function TeamMemberCard({ image, hoverImage, name, age, collage, description, co
     const accomplishments = description.split('\n');
 
     return (
-        <div className="teammember-card">
-            <h3 className="text-xl font-bold mb-2 text-left">{name}, {age}</h3>
-            
-            <div className="teammember-image-wrapper">
-                <img src={image} alt={name} className="teammember-image base-image" />
-                {hoverImage && (
-                    <img src={hoverImage} alt={`${name} hover`} className="teammember-image hover-image" />
-                )}
-            </div>
+        <div className="card-container">
+            <div className="card-inner">
+                {/* FRONT: Grayscale Image with Name */}
+                <div className="card-front">
+                    <img src={image} alt={`${name} grayscale`} className="card-image grayscale" />
+                    <div className="member-name-overlay">{name}</div>
+                </div>
 
-            <p className="text-xl font-bold mb-2 text-left">College: {collage}</p>
-            <p className="text-xl font-bold mb-2 text-left">Contact: {contact}</p>
-            <div className="text-left">
-                <p className="text-xl font-bold mb-1">Accomplishments:</p>
-                <ul className="list-disc list-inside">
-                    {accomplishments.map((item, index) => (
-                        <li key={index} className="mb-1">{item}</li>
-                    ))}
-                </ul>
+                {/* BACK: Color Image + Info Panel */}
+                <div className="card-back">
+                    <img src={hoverImage} alt={`${name} hover`} className="card-image color" />
+                    <div className="card-info">
+                        <p className='text'><strong>Age:</strong> {age}    <strong>College:</strong> {collage}</p>
+                        <p className='text'><strong>Contact:</strong> {contact}</p>
+                        <p className='text'><strong>Worked on:</strong></p>
+                        <ul>
+                            {accomplishments.map((item, i) => (
+                                <li key={i}>{item}</li>
+                            ))}
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     );
