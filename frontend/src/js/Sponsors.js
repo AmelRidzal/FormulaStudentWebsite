@@ -16,7 +16,7 @@ export default function Sponsors() {
             <div className="SponsorsTitle">
                 <h1>Our Sponsors</h1>
             </div>
-        <SponsorScroll></SponsorScroll>
+            <SponsorScroll></SponsorScroll>
 
             <div className="SponsorsAbout">
                 <div id="SponsorsTxt" style={Style.SponsorsAbout}>
@@ -28,7 +28,10 @@ export default function Sponsors() {
                     <p>
                         Tempted by this great project? Former ESTACA student? Want to help us realize our dream?
                         <br /><br /><br /><br />If you too would like to become a partner of the EFT, don’t wait and join the Formula Student adventure with us now!</p>
-                    <button id="SponsorsSupportUsBtn">Support us</button>
+                    <a href="mailto:support@unsaracing.com" id="SponsorsSupportUsBtnHolder"target="_blank">
+                        <button id="SponsorsSupportUsBtn">Support us</button>
+                    </a>
+
                 </div>
             </div>
             <div className="SponsorsDisplay">
