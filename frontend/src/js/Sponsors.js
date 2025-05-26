@@ -70,7 +70,7 @@ export default function Sponsors() {
                     <div className="ModalContent" onClick={e => e.stopPropagation()}>
                         <h2>Contact Us</h2>
                         <p>Email: support@unsaracing.com</p>
-                        <p>Phone: +33 1 23 45 67 89</p>
+                        <p>Phone: +387 61 123 456</p>
                         <button className="ModalCloseBtn" onClick={handleModalClose}>Close</button>
                     </div>
                 </div>
