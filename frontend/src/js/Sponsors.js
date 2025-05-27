@@ -1,9 +1,11 @@
 import { useState } from 'react';
-import Style from '../css/Sponsors.css';
+import '../css/Sponsors.css';
 import SponsorScroll from './SponsorScroller';
 
-import ansys from '../assets/ansys.png';
-import matlab from '../assets/matlab.png';
+import ansys from '../assets/sponzors/ansys.png';
+import matlab from '../assets/sponzors/matlab.png';
+import racingarena from '../assets/sponzors/racingarena.png';
+import solidworks from '../assets/sponzors/solidworks.svg';
 
 import '../css/Collors.css';
 
@@ -23,7 +25,7 @@ export default function Sponsors() {
     return (
         <div className={`Background ${showModal ? 'Blurred' : ''}`}>
             <div className="SponsorsTitle">
-                <h1>Our Sponsors</h1>
+                <h1></h1>
             </div>
             <SponsorScroll />
 
@@ -46,22 +48,54 @@ export default function Sponsors() {
 
             <div className="SponsorsDisplay">
                 <div className="Sponsors-grid-container">
-                    <div className="Sponsors-grid-item">
-                        <img src="https://racingarena.ba/wp-content/uploads/2024/03/racing-arena-logo-FINAL-02.png" className="Sponsors-logo" alt='racing arena' />
-                        <div className="Sponsor-overlay"><p>Racing arena<br />Main sponsor</p></div>
-                    </div>
-                    <div className="Sponsors-grid-item">
-                        <img src="https://www.3ds.com/assets/3ds-navigation/3DS_corporate-logo_solidworks.svg" className="Sponsors-logo" alt='3ds' />
-                        <div className="Sponsor-overlay"><p>3DS<br />Main sponsor</p></div>
-                    </div>
-                    <div className="Sponsors-grid-item">
-                        <img src={ansys} className="Sponsors-logo" alt='ansys' />
-                        <div className="Sponsor-overlay"><p>ansys<br />Main sponsors</p></div>
-                    </div>
-                    <div className="Sponsors-grid-item">
-                        <img src={matlab} className="Sponsors-logo" alt='matlab' />
-                        <div className="Sponsor-overlay"><p>MatLab<br />Main sponsor</p></div>
-                    </div>
+                    <a href="https://racingarena.ba/" target="_blank" rel="noopener noreferrer">
+                        <div className="Sponsors-grid-item">
+                            <img
+                                src={racingarena}
+                                className="Sponsors-logo"
+                                alt="racing arena"
+                            />
+                            <div className="Sponsor-overlay">
+                                <p>Racing arena<br />Main sponsor</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://www.solidworks.com/" target="_blank" rel="noopener noreferrer">
+                        <div className="Sponsors-grid-item">
+                            <img
+                                src={solidworks}
+                                className="Sponsors-logo"
+                                alt="racing arena"
+                            />
+                            <div className="Sponsor-overlay">
+                                <p>Solidworks<br />Main sponsor</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://www.ansys.com/" target="_blank" rel="noopener noreferrer">
+                        <div className="Sponsors-grid-item">
+                            <img
+                                src={ansys}
+                                className="Sponsors-logo"
+                                alt="racing arena"
+                            />
+                            <div className="Sponsor-overlay">
+                                <p>Ansys<br />Main sponsor</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://www.mathworks.com/products/matlab.html" target="_blank" rel="noopener noreferrer">
+                        <div className="Sponsors-grid-item">
+                            <img
+                                src={matlab}
+                                className="Sponsors-logo"
+                                alt="racing arena"
+                            />
+                            <div className="Sponsor-overlay">
+                                <p>MatLab<br />Main sponsor</p>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
 

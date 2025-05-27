@@ -10,7 +10,7 @@
 .SponsorsTitle h1 {
   width: 100%;
   text-align: center;
-  background-image: url('../assets/contract.avif');
+  background-image: url('../assets/contract.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -103,6 +103,7 @@
 .Sponsors-grid-item {
   position: relative;
   overflow: hidden;
+  display: flex; /* ADD THIS */
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -110,7 +111,9 @@
   cursor: pointer;
   border-radius: 30px;
   transition: transform 0.3s ease;
+  background-color: #050505;
 }
+
 
 .Sponsors-grid-item:hover {
   transform: scale(1.05);

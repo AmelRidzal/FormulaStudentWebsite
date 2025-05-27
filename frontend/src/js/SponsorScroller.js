@@ -1,7 +1,10 @@
 import '../css/SponsorScroller.css'
 import '../css/Collors.css';
-import ansys from '../assets/ansys.png';
-import matlab from '../assets/matlab.png';
+
+import ansys from '../assets/sponzors/ansys.png';
+import matlab from '../assets/sponzors/matlab.png';
+import racingarena from '../assets/sponzors/racingarena.png';
+import solidworks from '../assets/sponzors/solidworks.svg';
 
 export default function Sponsors() {
 
@@ -13,32 +16,12 @@ export default function Sponsors() {
                 <div class="sponsor-slider slide-1">
                     <div class="item">
                         <a href="/">
-                            <img src="https://racingarena.ba/wp-content/uploads/2024/03/racing-arena-logo-FINAL-02.png" alt="img" />
+                            <img src={racingarena} alt="img" />
                         </a>
                     </div>
                     <div class="item">
                         <a href="/">
-                            <img src="https://www.3ds.com/assets/3ds-navigation/3DS_corporate-logo_solidworks.svg" alt="img" />
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="/">
-                            <img src={matlab} alt="img" />
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="/">
-                            <img src={ansys} alt="img" />
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="/">
-                            <img src="https://racingarena.ba/wp-content/uploads/2024/03/racing-arena-logo-FINAL-02.png" alt="img" />
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="/">
-                            <img src="https://www.3ds.com/assets/3ds-navigation/3DS_corporate-logo_solidworks.svg" alt="img" />
+                            <img src={solidworks} alt="img" />
                         </a>
                     </div>
                     <div class="item">
@@ -53,12 +36,32 @@ export default function Sponsors() {
                     </div>
                     <div class="item">
                         <a href="/">
-                            <img src="https://racingarena.ba/wp-content/uploads/2024/03/racing-arena-logo-FINAL-02.png" alt="img" />
+                            <img src={racingarena} alt="img" />
                         </a>
                     </div>
                     <div class="item">
                         <a href="/">
-                            <img src="https://www.3ds.com/assets/3ds-navigation/3DS_corporate-logo_solidworks.svg" alt="img" />
+                            <img src={solidworks} alt="img" />
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="/">
+                            <img src={matlab} alt="img" />
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="/">
+                            <img src={ansys} alt="img" />
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="/">
+                            <img src={racingarena} alt="img" />
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="/">
+                            <img src={solidworks} alt="img" />
                         </a>
                     </div>
                     <div class="item">
@@ -75,32 +78,12 @@ export default function Sponsors() {
                 <div class="sponsor-slider slide-2">
                     <div class="item">
                         <a href="/">
-                            <img src="https://racingarena.ba/wp-content/uploads/2024/03/racing-arena-logo-FINAL-02.png" alt="img" />
+                            <img src={racingarena} alt="img" />
                         </a>
                     </div>
                     <div class="item">
                         <a href="/">
-                            <img src="https://www.3ds.com/assets/3ds-navigation/3DS_corporate-logo_solidworks.svg" alt="img" />
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="/">
-                            <img src={matlab} alt="img" />
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="/">
-                            <img src={ansys} alt="img" />
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="/">
-                            <img src="https://racingarena.ba/wp-content/uploads/2024/03/racing-arena-logo-FINAL-02.png" alt="img" />
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="/">
-                            <img src="https://www.3ds.com/assets/3ds-navigation/3DS_corporate-logo_solidworks.svg" alt="img" />
+                            <img src={solidworks} alt="img" />
                         </a>
                     </div>
                     <div class="item">
@@ -115,12 +98,32 @@ export default function Sponsors() {
                     </div>
                     <div class="item">
                         <a href="/">
-                            <img src="https://racingarena.ba/wp-content/uploads/2024/03/racing-arena-logo-FINAL-02.png" alt="img" />
+                            <img src={racingarena} alt="img" />
                         </a>
                     </div>
                     <div class="item">
                         <a href="/">
-                            <img src="https://www.3ds.com/assets/3ds-navigation/3DS_corporate-logo_solidworks.svg" alt="img" />
+                            <img src={solidworks} alt="img" />
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="/">
+                            <img src={matlab} alt="img" />
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="/">
+                            <img src={ansys} alt="img" />
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="/">
+                            <img src={racingarena} alt="img" />
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="/">
+                            <img src={solidworks} alt="img" />
                         </a>
                     </div>
                     <div class="item">

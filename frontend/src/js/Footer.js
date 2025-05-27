@@ -10,7 +10,6 @@ function Footer() {
         <div className="footer-section">
           <h3>Contact</h3>
           <p>Email: support@unsaracing.com</p>
-          <p>Phone: +387 61 123 456</p>
         </div>
 
         <div className="footer-section">
@@ -22,10 +21,8 @@ function Footer() {
         <div className="footer-section">
           <h3>Follow Us</h3>
           <div className="social-icons">
-            <a href="/"><i className="fab fa-instagram"></i></a>
-            <a href="/"><i className="fab fa-linkedin"></i></a>
-            <a href="/"><i className="fab fa-youtube"></i></a>
-            <a href="/"><i className="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/unsa_racingteam/"><i className="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61557404322303"><i className="fab fa-facebook"></i></a>
           </div>
         </div>
 
