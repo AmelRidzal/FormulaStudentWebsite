@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import '../css/Collors.css';
 import '../css/Subteam.css';
@@ -11,6 +11,7 @@ const SUBTEAMS = [
 
 function Subteam() {
   const [members, setMembers] = useState([]);
+  const [currentTeam, setCurrentTeam] = useState('');
 
   const handleClick = async (team) => {
     try {
@@ -21,6 +22,12 @@ function Subteam() {
       console.error('Error fetching team:', err);
     }
   };
+
+  // Load a random subteam on initial render
+  useEffect(() => {
+    const randomTeam = SUBTEAMS[Math.floor(Math.random() * SUBTEAMS.length)];
+    handleClick(randomTeam);
+  }, []);
 
   return (
     <>
