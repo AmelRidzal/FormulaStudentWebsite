@@ -20,7 +20,7 @@ function TeamMemberCard({ image, hoverImage, name, age, collage, description, co
                     <div className="card-info">
                         <p className='text'><strong>Age:</strong> {age}    <strong>College:</strong> {collage}</p>
                         <p className='text'><strong>Contact:</strong> {contact}</p>
-                        <p className='text'><strong>Worked on:</strong></p>
+                        <p className='text'><strong>Worked on and accomplishments:</strong></p>
                         <ul>
                             {accomplishments.map((item, i) => (
                                 <li key={i}>{item}</li>

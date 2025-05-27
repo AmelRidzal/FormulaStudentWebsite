@@ -49,6 +49,15 @@
   ],
   "Software": [
     {
+      "name": "Kemal Becarevic",
+      "age": "",
+      "college": "",
+      "accomplishments": "Team Lead",
+      "contact": "",
+      "image": "baby.jpg",
+      "hoverImage": ""
+    },
+    {
       "name": "Jasarevic Edis",
       "age": "23",
       "college": "Electrotehnicki fakultet Sarajevo",
@@ -61,7 +70,7 @@
       "name": "Ridzal Amel",
       "age": "23",
       "college": "Electrotehnicki fakultet Sarajevo",
-      "accomplishments": "Website design and development\nECU immo disabling\nChassie design",
+      "accomplishments": "Website lead, design and development\nECU immo disabling\nChassie design",
       "contact": "amelridzal37@gmail.com",
       "image": "baby.jpg",
       "hoverImage": "amel.jpg"
