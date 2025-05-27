@@ -1,0 +1,352 @@
+{
+  "Chassie": [
+    
+    {
+      "name": "Ribic Afan",
+      "age": "",
+      "college": "",
+      "accomplishments": "Team Lead",
+      "contact": "",
+      "image": "baby.jpg",
+      "hoverImage": ""
+    },
+    {
+      "name": "Ridzal Amel",
+      "age": "23",
+      "college": "Electrotehnicki fakultet Sarajevo",
+      "accomplishments": "Website design and development\nECU immo disabling\nChassie design",
+      "contact": "amelridzal37@gmail.com",
+      "image": "baby.jpg",
+      "hoverImage": "amel.jpg"
+    },
+    {
+      "name": "Samarlic Vinko",
+      "age": "",
+      "college": "",
+      "accomplishments": "",
+      "contact": "",
+      "image": "baby.jpg",
+      "hoverImage": ""
+    },
+    {
+      "name": "Sovic Lara",
+      "age": "",
+      "college": "",
+      "accomplishments": "",
+      "contact": "",
+      "image": "baby.jpg",
+      "hoverImage": ""
+    },
+    {
+      "name": "MUlahasanovic Arnel",
+      "age": "",
+      "college": "",
+      "accomplishments": "",
+      "contact": "",
+      "image": "baby.jpg",
+      "hoverImage": ""
+    }
+  ],
+  "Software": [
+    {
+      "name": "Jasarevic Edis",
+      "age": "23",
+      "college": "Electrotehnicki fakultet Sarajevo",
+      "accomplishments": "Website design and development",
+      "contact": "jasarevic03@gmail.com",
+      "image": "baby.jpg",
+      "hoverImage": "edis.jpg"
+    },
+    {
+      "name": "Ridzal Amel",
+      "age": "23",
+      "college": "Electrotehnicki fakultet Sarajevo",
+      "accomplishments": "Website design and development\nECU immo disabling\nChassie design",
+      "contact": "amelridzal37@gmail.com",
+      "image": "baby.jpg",
+      "hoverImage": "amel.jpg"
+    },
+    {
+      "name": "Uzunovic Benjamin",
+      "age": "23",
+      "college": "Electrotehnicki fakultet Sarajevo",
+      "accomplishments": "Telemetry design and development",
+      "contact": "buzunovic1@etf.unsa.ba",
+      "image": "baby.jpg",
+      "hoverImage": "benjo.jpg"
+    }
+  ], 
+  "Aerodinamics":[
+    {
+      "name": "Filipovic Mario",
+      "age": "",
+      "college": "",
+      "accomplishments": "Team Lead",
+      "contact": "",
+      "image": "baby.jpg",
+      "hoverImage": ""
+    },
+    {
+      "name": "",
+      "age": "",
+      "college": "",
+      "accomplishments": "",
+      "contact": "",
+      "image": "baby.jpg",
+      "hoverImage": ""
+    },
+    {
+      "name": "",
+      "age": "",
+      "college": "",
+      "accomplishments": "",
+      "contact": "",
+      "image": "baby.jpg",
+      "hoverImage": ""
+    },
+    {
+      "name": "",
+      "age": "",
+      "college": "",
+      "accomplishments": "",
+      "contact": "",
+      "image": "baby.jpg",
+      "hoverImage": ""
+    }
+
+  ], 
+  "Suspension":[
+    {
+      "name": "Omerbegovic Harun",
+      "age": "",
+      "college": "",
+      "accomplishments": "Team Lead",
+      "contact": "",
+      "image": "baby.jpg",
+      "hoverImage": ""
+    },
+    {
+      "name": "",
+      "age": "",
+      "college": "",
+      "accomplishments": "",
+      "contact": "",
+      "image": "baby.jpg",
+      "hoverImage": ""
+    },
+    {
+      "name": "",
+      "age": "",
+      "college": "",
+      "accomplishments": "",
+      "contact": "",
+      "image": "baby.jpg",
+      "hoverImage": ""
+    },
+    {
+      "name": "",
+      "age": "",
+      "college": "",
+      "accomplishments": "",
+      "contact": "",
+      "image": "baby.jpg",
+      "hoverImage": ""
+    }
+
+  ],
+  "Powertrain":[
+    {
+      "name": "Celikovic Ahmed",
+      "age": "",
+      "college": "",
+      "accomplishments": "Team Lead",
+      "contact": "",
+      "image": "baby.jpg",
+      "hoverImage": ""
+    },
+    {
+      "name": "",
+      "age": "",
+      "college": "",
+      "accomplishments": "",
+      "contact": "",
+      "image": "baby.jpg",
+      "hoverImage": ""
+    },
+    {
+      "name": "",
+      "age": "",
+      "college": "",
+      "accomplishments": "",
+      "contact": "",
+      "image": "baby.jpg",
+      "hoverImage": ""
+    },
+    {
+      "name": "",
+      "age": "",
+      "college": "",
+      "accomplishments": "",
+      "contact": "",
+      "image": "baby.jpg",
+      "hoverImage": ""
+    }
+
+  ], 
+  "Electronics":[
+    {
+      "name": "Niksic Omer",
+      "age": "",
+      "college": "",
+      "accomplishments": "Team Lead",
+      "contact": "",
+      "image": "baby.jpg",
+      "hoverImage": ""
+    },
+    {
+      "name": "",
+      "age": "",
+      "college": "",
+      "accomplishments": "",
+      "contact": "",
+      "image": "baby.jpg",
+      "hoverImage": ""
+    },
+    {
+      "name": "",
+      "age": "",
+      "college": "",
+      "accomplishments": "",
+      "contact": "",
+      "image": "baby.jpg",
+      "hoverImage": ""
+    },
+    {
+      "name": "",
+      "age": "",
+      "college": "",
+      "accomplishments": "",
+      "contact": "",
+      "image": "baby.jpg",
+      "hoverImage": ""
+    }
+
+  ],
+  "Marketing":[
+    {
+      "name": "Buric Ahmed",
+      "age": "",
+      "college": "",
+      "accomplishments": "Team Lead",
+      "contact": "",
+      "image": "baby.jpg",
+      "hoverImage": ""
+    },
+    {
+      "name": "",
+      "age": "",
+      "college": "",
+      "accomplishments": "",
+      "contact": "",
+      "image": "baby.jpg",
+      "hoverImage": ""
+    },
+    {
+      "name": "",
+      "age": "",
+      "college": "",
+      "accomplishments": "",
+      "contact": "",
+      "image": "baby.jpg",
+      "hoverImage": ""
+    },
+    {
+      "name": "",
+      "age": "",
+      "college": "",
+      "accomplishments": "",
+      "contact": "",
+      "image": "baby.jpg",
+      "hoverImage": ""
+    }
+
+  ], 
+  "Management":[
+    {
+      "name": "Busic Mateo",
+      "age": "",
+      "college": "",
+      "accomplishments": "Team Lead",
+      "contact": "",
+      "image": "baby.jpg",
+      "hoverImage": ""
+    },
+    {
+      "name": "",
+      "age": "",
+      "college": "",
+      "accomplishments": "",
+      "contact": "",
+      "image": "baby.jpg",
+      "hoverImage": ""
+    },
+    {
+      "name": "",
+      "age": "",
+      "college": "",
+      "accomplishments": "",
+      "contact": "",
+      "image": "baby.jpg",
+      "hoverImage": ""
+    },
+    {
+      "name": "",
+      "age": "",
+      "college": "",
+      "accomplishments": "",
+      "contact": "",
+      "image": "baby.jpg",
+      "hoverImage": ""
+    }
+
+  ],
+  "Statics":[
+    {
+      "name": "Sorguc Tarik",
+      "age": "",
+      "college": "",
+      "accomplishments": "",
+      "contact": "",
+      "image": "baby.jpg",
+      "hoverImage": ""
+    },
+    {
+      "name": "",
+      "age": "",
+      "college": "",
+      "accomplishments": "",
+      "contact": "",
+      "image": "baby.jpg",
+      "hoverImage": ""
+    },
+    {
+      "name": "",
+      "age": "",
+      "college": "",
+      "accomplishments": "",
+      "contact": "",
+      "image": "baby.jpg",
+      "hoverImage": ""
+    },
+    {
+      "name": "",
+      "age": "",
+      "college": "",
+      "accomplishments": "",
+      "contact": "",
+      "image": "baby.jpg",
+      "hoverImage": ""
+    }
+
+  ]
+}

@@ -4,14 +4,12 @@ import TeamPic from '../assets/TeamPic.jpg'
 import FormulaStudentPic from '../assets/industrial_website_png.png'
 import MainPic from '../assets/lum-silverstone-main.jpg'
 import SponsorScroll from './SponsorScroller'
-import SponsorScrollV2 from './SponsorScrollerV2'
 import logo from '../assets/logoNoText.png';
 
 import '../css/Default.css';
 import '../css/News.css';
 import '../css/Collors.css';
 import '../css/SponsorScroller.css';
-import '../css/SponsorScrollerV2.css';
 
 
 function Home() {
