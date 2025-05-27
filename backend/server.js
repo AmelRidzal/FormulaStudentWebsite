@@ -11,10 +11,12 @@ app.use(cors());
 
 // Serve static images
 app.use('/images', express.static(path.join(__dirname, 'public/images')));
-app.use('/memberPics', express.static(path.join(__dirname, 'public/memberPics')));
+app.use('/memberPics', express.static(path.join(__dirname, 'public/subteams/memberPics')));
+app.use('/newsPics', express.static(path.join(__dirname, 'public/newsletters/newsPics')));
 
-// Serve members.json directly
-app.use('/members.json', express.static(path.join(__dirname, 'public/members.json')));
+// Serve .json directly
+app.use('/members.json', express.static(path.join(__dirname, 'public/subteams/members.json')));
+app.use('/newsletters.json', express.static(path.join(__dirname, 'public/newsletters/newsletters.json')));
 
 // Health check endpoint
 app.get('/health', (req, res) => {
@@ -38,7 +40,7 @@ app.get('/api/gallery', (req, res) => {
 // API to serve filtered team members
 app.get('/api/subteam/:team', (req, res) => {
   const team = req.params.team;
-  const membersFilePath = path.join(__dirname, 'public', 'members.json');
+  const membersFilePath = path.join(__dirname, 'public/subteams', 'members.json');
 
   fs.readFile(membersFilePath, 'utf-8', (err, data) => {
     if (err) {
@@ -51,6 +53,31 @@ app.get('/api/subteam/:team', (req, res) => {
     res.json(teamMembers);
   });
 });
+
+
+
+
+// API to serve newsletters
+app.get('/api/newsletters', (req, res) => {
+  const newslettersPath = path.join(__dirname, 'public/newsletters','newsletters.json');
+
+  fs.readFile(newslettersPath, 'utf-8', (err, data) => {
+    if (err) {
+      console.error('Error reading newsletters.json:', err);
+      return res.status(500).json({ error: 'Failed to load newsletters' });
+    }
+
+    try {
+      const newsletters = JSON.parse(data);
+      res.json(newsletters);
+    } catch (parseErr) {
+      console.error('Error parsing newsletters.json:', parseErr);
+      res.status(500).json({ error: 'Invalid JSON format' });
+    }
+  });
+});
+
+
 
 // Start the server
 app.listen(PORT, () => {

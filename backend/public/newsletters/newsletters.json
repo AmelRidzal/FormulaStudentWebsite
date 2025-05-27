@@ -1,0 +1,14 @@
+[
+  {
+    "image": "news.jpg",
+    "title": "News from January",
+    "date": "23.1.2025",
+    "description": "Description from January"
+  },
+  {
+    "image": "news.jpg",
+    "title": "News from February",
+    "date": "23.2.2025",
+    "description": "Description from February"
+  }
+]
