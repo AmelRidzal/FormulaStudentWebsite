@@ -10,5 +10,23 @@
     "title": "News from February",
     "date": "23.2.2025",
     "description": "Description from February"
+  },
+  {
+    "image": "news.jpg",
+    "title": "News from March",
+    "date": "23.3.2025",
+    "description": "Description from March"
+  },
+  {
+    "image": "news.jpg",
+    "title": "News from April",
+    "date": "23.4.2025",
+    "description": "Description from April"
+  },
+  {
+    "image": "news.jpg",
+    "title": "News from May",
+    "date": "23.5.2025",
+    "description": "Description from May"
   }
 ]
