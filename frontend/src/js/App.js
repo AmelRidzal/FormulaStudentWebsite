@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
-import FbxViewer from './FbxViewer.js';
+import GlbViewer from './GlbViewer.js';
 import Default from './Default.js'
 import Picturs from './Picturs.js'
 import News from './News.js'
@@ -16,7 +16,7 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/fbx" element={<FbxViewer />} />
+        <Route path="/3dmodel" element={<GlbViewer />} />
         <Route path="/" element={<Default />} />
         <Route path="/pics" element={<Picturs />} />
         <Route path="/news" element={<News />} />
