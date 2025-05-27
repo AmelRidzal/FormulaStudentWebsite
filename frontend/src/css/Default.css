@@ -181,7 +181,12 @@ h1 {
 }
 
 /*-------------------------------------------*/
+@media (max-width: 768px){
+.subteams-section {
+  display: none;
+}
 
+}
 .subteams-section {
   background-color: #292424;
   padding: 4rem 2rem;

@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../assets/logoNoText.png';
 
@@ -5,6 +6,8 @@ import '../css/Navbar.css';
 import '../css/Collors.css';
 
 const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <nav className="navbar">
       <div className="navbar-left">
@@ -13,16 +16,31 @@ const Navbar = () => {
           <span className="logo-text">UNSA RACING TEAM</span>
         </div>
       </div>
-      <ul className="nav-links">
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/news">News</Link></li>
-        <li><Link to="/subteam">Subteams</Link></li>
-        <li><Link to="/pics">Pictures</Link></li>
-        <li><Link to="/3dmodel">3D Model</Link></li>
-        <li><Link to="/sponsors">Sponsors</Link></li>
-        </ul>
-  <div className="navbar-right" /> {/* Empty div to balance the left side */}
-</nav>
+
+      <ul className={`nav-links ${menuOpen ? 'open' : ''}`}>
+        <li><Link to="/" onClick={() => setMenuOpen(false)}>Home</Link></li>
+        <li><Link to="/news" onClick={() => setMenuOpen(false)}>News</Link></li>
+        <li><Link to="/subteam" onClick={() => setMenuOpen(false)}>Subteams</Link></li>
+        <li><Link to="/pics" onClick={() => setMenuOpen(false)}>Pictures</Link></li>
+        <li><Link to="/3dmodel" onClick={() => setMenuOpen(false)}>3D Model</Link></li>
+        <li><Link to="/sponsors" onClick={() => setMenuOpen(false)}>Sponsors</Link></li>
+      </ul>
+
+      <div className="navbar-right">
+        <div
+          className={`hamburger ${menuOpen ? 'open' : ''}`}
+          onClick={() => {
+  setMenuOpen(!menuOpen);
+  console.log("hamburger clicked");
+}}
+
+        >
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </nav>
   );
 };
 

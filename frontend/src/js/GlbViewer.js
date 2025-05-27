@@ -30,14 +30,14 @@ const Model = ({ modelPath }) => {
 };
 
 const FbxViewer = () => {
-  const [model, setModel] = useState('/models/fs.glb'); // default model path
+  const [model, setModel] = useState('/models/aero.glb'); // default model path
 
   return (
     <>
       {/* Custom Navbar */}
       <nav className="navbar">
         <ul className="nav-links">
-          <li><button onClick={() => setModel('/models/fs.glb')}>Aero</button></li>
+          <li><button onClick={() => setModel('/models/aero.glb')}>Aero</button></li>
           <li><button onClick={() => setModel('/models/chassie.glb')}>Chassie</button></li>
           <li><button onClick={() => setModel('/models/engine.glb')}>Engine</button></li>
         </ul>
