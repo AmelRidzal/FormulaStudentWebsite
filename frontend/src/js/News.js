@@ -5,9 +5,10 @@ import '../css/News.css';
 
 function Updates() {
   const [newsletters, setNewsletters] = useState([]);
+    const backendURL = process.env.REACT_APP_BACKEND_URL;
 
   useEffect(() => {
-    fetch('http://localhost:3001/api/newsletters')
+    fetch(`${backendURL}/api/newsletters`)
       .then((res) => res.json())
       .then((data) => {
         setNewsletters(data);
@@ -24,7 +25,7 @@ function Updates() {
         {newsletters.map((item, index) => (
           <UpdateCard
             key={index}
-            image={`http://localhost:3001/newsPics/${item.image}`}
+            image={`${backendURL}/newsPics/${item.image}`}
 
             title={item.title}
             date={item.date}
