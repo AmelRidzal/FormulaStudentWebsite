@@ -75,12 +75,18 @@
 }
 
 .card-info {
-    padding: 1rem;
-    font-size: 0.9rem;
-    color: #222;
-    width: 100%;
-    height: 40%;
-    overflow-y: auto;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #222;
+  width: 100%;
+  height: 40%;
+  overflow-y: auto;
+  text-align: left; 
+}
+
+.text {
+  padding-left: 1rem;
+  text-align: left; 
 }
 .card-front .card-image.grayscale {
     position: absolute;
@@ -91,6 +97,3 @@
     object-fit: cover;
 }
 
-.text{
-    padding-left: 1rem;
-}
