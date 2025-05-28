@@ -1,24 +1,31 @@
-.FBXnavbar {
-  position: absolute;
-  top: 20px;
+.glbnavbar {
+  position: fixed;
+  top: 50px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 10;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 1);
   padding: 10px 30px;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); 
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  width: 100%; 
 }
 
-.nav-links {
+.glbnav-links {
   display: flex;
   list-style: none;
   gap: 20px;
   margin: 0;
   padding: 0;
+  justify-content: center; 
+  align-items: center;
 }
 
-.nav-links button {
+
+.glbnav-links button {
   background: none;
   border: 2px solid #ffffff55;
   color: white;
@@ -30,7 +37,7 @@
   font-size: 14px;
 }
 
-.nav-links button:hover {
+.glbnav-links button:hover {
   background: var(--logo-blue);
   border-color: var(--logo-blue);
   color: #101010;

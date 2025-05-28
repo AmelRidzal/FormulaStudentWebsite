@@ -35,8 +35,8 @@ const FbxViewer = () => {
   return (
     <>
       {/* Custom Navbar */}
-      <nav className="navbar">
-        <ul className="nav-links">
+      <nav className="glbnavbar">
+        <ul className="glbnav-links">
           <li><button onClick={() => setModel('/models/aero.glb')}>Aero</button></li>
           <li><button onClick={() => setModel('/models/chassie.glb')}>Chassie</button></li>
           <li><button onClick={() => setModel('/models/engine.glb')}>Engine</button></li>
