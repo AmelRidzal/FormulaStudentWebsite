@@ -1,32 +1,42 @@
 [
   {
+    "id": "1",
     "image": "news.jpg",
     "title": "News from January",
     "date": "23.1.2025",
-    "description": "Description from January"
+    "description": "Description from January",
+    "content": "Full content for January's newsletter."
   },
   {
+    "id": "2",
     "image": "news.jpg",
     "title": "News from February",
     "date": "23.2.2025",
-    "description": "Description from February"
+    "description": "Description from February",
+    "content": "Full content for February's newsletter."
   },
   {
+    "id": "3",
     "image": "news.jpg",
     "title": "News from March",
     "date": "23.3.2025",
-    "description": "Description from March"
+    "description": "Description from March",
+    "content": "Full content for March's newsletter."
   },
   {
+    "id": "4",
     "image": "news.jpg",
     "title": "News from April",
     "date": "23.4.2025",
-    "description": "Description from April"
+    "description": "Description from April",
+    "content": "Full content for April's newsletter."
   },
   {
+    "id": "5",
     "image": "news.jpg",
     "title": "News from May",
     "date": "23.5.2025",
-    "description": "Description from May"
+    "description": "Description from May",
+    "content": "Full content for May's newsletter."
   }
 ]

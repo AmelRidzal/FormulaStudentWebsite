@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import UpdateCard from './UpdateCard';
+import NewsCard from './NewsCard';
 import '../css/Collors.css';
 import '../css/News.css';
 
-function Updates() {
+function Newsletter() {
   const [newsletters, setNewsletters] = useState([]);
-    const backendURL = process.env.REACT_APP_BACKEND_URL;
+  const backendURL = process.env.REACT_APP_BACKEND_URL;
 
   useEffect(() => {
     fetch(`${backendURL}/api/newsletters`)
@@ -23,18 +23,19 @@ function Updates() {
       <h1 className="updates-title">Newsletter</h1>
       <div className="updates-grid">
         {newsletters.map((item, index) => (
-          <UpdateCard
+          <NewsCard
             key={index}
+            id={item.id}
             image={`${backendURL}/newsPics/${item.image}`}
-
             title={item.title}
             date={item.date}
             description={item.description}
           />
+
         ))}
       </div>
     </div>
   );
 }
 
-export default Updates;
+export default Newsletter;

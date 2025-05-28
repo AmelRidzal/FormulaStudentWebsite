@@ -77,6 +77,30 @@ app.get('/api/newsletters', (req, res) => {
   });
 });
 
+// GET /api/newsletters/:id
+app.get('/api/newsletters/:id', (req, res) => {
+  const { id } = req.params;
+  const newslettersPath = path.join(__dirname, 'public/newsletters','newsletters.json');
+
+  fs.readFile(newslettersPath, 'utf-8', (err, data) => {
+    if (err) {
+      console.error('Error reading newsletters.json:', err);
+      return res.status(500).json({ error: 'Failed to load newsletters' });
+    }
+
+    try {
+      const newsletters = JSON.parse(data);
+      const newsletter = newsletters.find(n => n.id === id);
+      if (!newsletter) {
+        return res.status(404).json({ error: 'Newsletter not found' });
+      }
+      res.json(newsletter);
+    } catch (parseErr) {
+      console.error('Error parsing newsletters.json:', parseErr);
+      res.status(500).json({ error: 'Invalid JSON format' });
+    }
+  });
+});
 
 
 // Start the server

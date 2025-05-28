@@ -6,6 +6,7 @@ import GlbViewer from './GlbViewer.js';
 import Default from './Default.js'
 import Gallery from './Gallery.js'
 import News from './News.js'
+import NewslettersDetail from './NewslettersDetails.js'
 import Sponsors from './Sponsors.js'
 import Navbar from './Navbar.js';
 import Footer from './Footer.js';
@@ -20,6 +21,7 @@ function App() {
         <Route path="/" element={<Default />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/news" element={<News />} />
+        <Route path="/news/:id" element={<NewslettersDetail />} />
         <Route path="/sponsors" element={<Sponsors />} />
         <Route path="/subteam" element={<Subteam />} />
         {/* other routes here */}

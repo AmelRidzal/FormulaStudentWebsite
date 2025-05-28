@@ -5,9 +5,8 @@
 
 .updates-title {
   font-size: 2rem;
-  color: #a61717;
+  color: var(--logo-blue);
   margin-bottom: 30px;
-  border-bottom: 2px solid #a61717;
   display: inline-block;
 }
 
@@ -36,7 +35,7 @@
 .view-content-button {
   background: none;
   border: none;
-  color: #a61717;
+  color: var(--logo-blue);
   font-weight: bold;
   cursor: pointer;
   padding: 8px 0;
@@ -46,4 +45,43 @@ footer {
   margin-top: 40px;
   text-align: center;
   color: #666;
+}
+
+
+
+/*details ---------------------------------*/
+
+
+
+/* Detail View Styling */
+
+.newsletter-detail-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.newsletter-detail-image {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 4px;
+}
+
+.newsletter-detail-date {
+  display: block;
+  margin-top: 10px;
+  font-style: italic;
+  color: #888;
+}
+
+.newsletter-detail-description {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.newsletter-detail-content {
+  margin-top: 30px;
+  line-height: 1.6;
+  color: #222;
 }
