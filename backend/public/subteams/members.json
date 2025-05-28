@@ -4,6 +4,7 @@
     {
       "name": "Ribic Afan",
       "age": "",
+      "memberfrom":"",
       "college": "",
       "accomplishments": "Team Lead",
       "contact": "",
@@ -13,6 +14,7 @@
     {
       "name": "Ridzal Amel",
       "age": "23",
+      "memberfrom":"2024-present day",
       "college": "Electrotehnicki fakultet Sarajevo",
       "accomplishments": "Website design and development\nECU immo disabling\nChassie design",
       "contact": "amelridzal37@gmail.com",
@@ -22,6 +24,7 @@
     {
       "name": "Samarlic Vinko",
       "age": "",
+      "memberfrom":"",
       "college": "",
       "accomplishments": "",
       "contact": "",
@@ -31,6 +34,7 @@
     {
       "name": "Sovic Lara",
       "age": "",
+      "memberfrom":"",
       "college": "",
       "accomplishments": "",
       "contact": "",
@@ -38,8 +42,9 @@
       "hoverImage": ""
     },
     {
-      "name": "MUlahasanovic Arnel",
+      "name": "Mulahasanovic Arnel",
       "age": "",
+      "memberfrom":"",
       "college": "",
       "accomplishments": "",
       "contact": "",
@@ -51,6 +56,7 @@
     {
       "name": "Kemal Becarevic",
       "age": "",
+      "memberfrom":"",
       "college": "",
       "accomplishments": "Team Lead",
       "contact": "",
@@ -89,6 +95,7 @@
     {
       "name": "Filipovic Mario",
       "age": "",
+      "memberfrom":"",
       "college": "",
       "accomplishments": "Team Lead",
       "contact": "",
@@ -96,8 +103,9 @@
       "hoverImage": ""
     },
     {
-      "name": "",
+      "name": "Delic Said",
       "age": "",
+      "memberfrom":"",
       "college": "",
       "accomplishments": "",
       "contact": "",
@@ -105,8 +113,9 @@
       "hoverImage": ""
     },
     {
-      "name": "",
+      "name": "Mujic Neira",
       "age": "",
+      "memberfrom":"",
       "college": "",
       "accomplishments": "",
       "contact": "",
@@ -114,8 +123,9 @@
       "hoverImage": ""
     },
     {
-      "name": "",
+      "name": "Buzuk Marko",
       "age": "",
+      "memberfrom":"",
       "college": "",
       "accomplishments": "",
       "contact": "",
@@ -128,35 +138,9 @@
     {
       "name": "Omerbegovic Harun",
       "age": "",
+      "memberfrom":"",
       "college": "",
       "accomplishments": "Team Lead",
-      "contact": "",
-      "image": "baby.jpg",
-      "hoverImage": ""
-    },
-    {
-      "name": "",
-      "age": "",
-      "college": "",
-      "accomplishments": "",
-      "contact": "",
-      "image": "baby.jpg",
-      "hoverImage": ""
-    },
-    {
-      "name": "",
-      "age": "",
-      "college": "",
-      "accomplishments": "",
-      "contact": "",
-      "image": "baby.jpg",
-      "hoverImage": ""
-    },
-    {
-      "name": "",
-      "age": "",
-      "college": "",
-      "accomplishments": "",
       "contact": "",
       "image": "baby.jpg",
       "hoverImage": ""
@@ -167,6 +151,7 @@
     {
       "name": "Celikovic Ahmed",
       "age": "",
+      "memberfrom":"",
       "college": "",
       "accomplishments": "Team Lead",
       "contact": "",
@@ -174,8 +159,9 @@
       "hoverImage": ""
     },
     {
-      "name": "",
+      "name": "Celikovic Benjamin",
       "age": "",
+      "memberfrom":"",
       "college": "",
       "accomplishments": "",
       "contact": "",
@@ -183,8 +169,9 @@
       "hoverImage": ""
     },
     {
-      "name": "",
+      "name": "Skulj Harun",
       "age": "",
+      "memberfrom":"",
       "college": "",
       "accomplishments": "",
       "contact": "",
@@ -192,8 +179,9 @@
       "hoverImage": ""
     },
     {
-      "name": "",
+      "name": "Kozar Emin",
       "age": "",
+      "memberfrom":"",
       "college": "",
       "accomplishments": "",
       "contact": "",
@@ -206,6 +194,7 @@
     {
       "name": "Niksic Omer",
       "age": "",
+      "memberfrom":"",
       "college": "",
       "accomplishments": "Team Lead",
       "contact": "",
@@ -213,8 +202,9 @@
       "hoverImage": ""
     },
     {
-      "name": "",
+      "name": "Jakic Zlatan",
       "age": "",
+      "memberfrom":"",
       "college": "",
       "accomplishments": "",
       "contact": "",
@@ -222,8 +212,9 @@
       "hoverImage": ""
     },
     {
-      "name": "",
+      "name": "Vujovic Bosnjak Boris",
       "age": "",
+      "memberfrom":"",
       "college": "",
       "accomplishments": "",
       "contact": "",
@@ -231,8 +222,59 @@
       "hoverImage": ""
     },
     {
-      "name": "",
+      "name": "Masanovic Max",
       "age": "",
+      "memberfrom":"",
+      "college": "",
+      "accomplishments": "",
+      "contact": "",
+      "image": "baby.jpg",
+      "hoverImage": ""
+    },
+    {
+      "name": "Hrbat Alem",
+      "age": "",
+      "memberfrom":"",
+      "college": "",
+      "accomplishments": "",
+      "contact": "",
+      "image": "baby.jpg",
+      "hoverImage": ""
+    },
+    {
+      "name": "Imamovic Anes",
+      "age": "",
+      "memberfrom":"",
+      "college": "",
+      "accomplishments": "",
+      "contact": "",
+      "image": "baby.jpg",
+      "hoverImage": ""
+    },
+    {
+      "name": "Agic Ilhana",
+      "age": "",
+      "memberfrom":"",
+      "college": "",
+      "accomplishments": "",
+      "contact": "",
+      "image": "baby.jpg",
+      "hoverImage": ""
+    },
+    {
+      "name": "Malisevic Haris",
+      "age": "",
+      "memberfrom":"",
+      "college": "",
+      "accomplishments": "",
+      "contact": "",
+      "image": "baby.jpg",
+      "hoverImage": ""
+    },
+    {
+      "name": "Komarica Din",
+      "age": "",
+      "memberfrom":"",
       "college": "",
       "accomplishments": "",
       "contact": "",
@@ -245,6 +287,7 @@
     {
       "name": "Buric Ahmed",
       "age": "",
+      "memberfrom":"",
       "college": "",
       "accomplishments": "Team Lead",
       "contact": "",
@@ -252,8 +295,9 @@
       "hoverImage": ""
     },
     {
-      "name": "",
+      "name": "Sovic Lara",
       "age": "",
+      "memberfrom":"",
       "college": "",
       "accomplishments": "",
       "contact": "",
@@ -261,17 +305,9 @@
       "hoverImage": ""
     },
     {
-      "name": "",
+      "name": "Vidic Ana",
       "age": "",
-      "college": "",
-      "accomplishments": "",
-      "contact": "",
-      "image": "baby.jpg",
-      "hoverImage": ""
-    },
-    {
-      "name": "",
-      "age": "",
+      "memberfrom":"",
       "college": "",
       "accomplishments": "",
       "contact": "",
@@ -284,6 +320,7 @@
     {
       "name": "Busic Mateo",
       "age": "",
+      "memberfrom":"",
       "college": "",
       "accomplishments": "Team Lead",
       "contact": "",
@@ -291,26 +328,9 @@
       "hoverImage": ""
     },
     {
-      "name": "",
+      "name": "Omerbegovic Harun",
       "age": "",
-      "college": "",
-      "accomplishments": "",
-      "contact": "",
-      "image": "baby.jpg",
-      "hoverImage": ""
-    },
-    {
-      "name": "",
-      "age": "",
-      "college": "",
-      "accomplishments": "",
-      "contact": "",
-      "image": "baby.jpg",
-      "hoverImage": ""
-    },
-    {
-      "name": "",
-      "age": "",
+      "memberfrom":"",
       "college": "",
       "accomplishments": "",
       "contact": "",
@@ -323,6 +343,7 @@
     {
       "name": "Sorguc Tarik",
       "age": "",
+      "memberfrom":"",
       "college": "",
       "accomplishments": "",
       "contact": "",
@@ -330,26 +351,9 @@
       "hoverImage": ""
     },
     {
-      "name": "",
+      "name": "Karabegovic Nejra",
       "age": "",
-      "college": "",
-      "accomplishments": "",
-      "contact": "",
-      "image": "baby.jpg",
-      "hoverImage": ""
-    },
-    {
-      "name": "",
-      "age": "",
-      "college": "",
-      "accomplishments": "",
-      "contact": "",
-      "image": "baby.jpg",
-      "hoverImage": ""
-    },
-    {
-      "name": "",
-      "age": "",
+      "memberfrom":"",
       "college": "",
       "accomplishments": "",
       "contact": "",

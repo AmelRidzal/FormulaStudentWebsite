@@ -42,23 +42,23 @@ function Subteam() {
       </nav>
 
       <section id="teammember" className="teammember">
-        <div className="teammember-grid">
-          <div className="cards-wrapper">
-            {members.map((m, idx) => (
-              <Teammembers
-                key={idx}
-                image={`/memberPics/${m.image}`}
-                hoverImage={`/memberPics/${m.hoverImage || m.image}`} // fallback if hoverImage not provided
-                name={m.name}
-                age={m.age}
-                collage={m.college}
-                description={m.accomplishments}
-                contact={m.contact}
-              />
-            ))}
-          </div>
-        </div>
-      </section>
+  <div className="cards-wrapper">
+    {members.map((m, idx) => (
+      <Teammembers
+        key={idx}
+        image={`/memberPics/${m.image}`}
+        hoverImage={`/memberPics/${m.hoverImage || m.image}`}
+        name={m.name}
+        age={m.age}
+        memberfrom={m.memberfrom}
+        collage={m.college}
+        description={m.accomplishments}
+        contact={m.contact}
+      />
+    ))}
+  </div>
+</section>
+
     </>
   );
 }

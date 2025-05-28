@@ -68,9 +68,18 @@ app.get('/api/randommembers', (req, res) => {
 
     try {
       const allTeams = JSON.parse(data);
-      // Combine all member arrays into one
       const allMembers = Object.values(allTeams).flat();
-      const teamMembers = getRandomItems(allMembers, 3);
+
+      // Deduplicate members based on their name
+      const uniqueMembersMap = new Map();
+      for (const member of allMembers) {
+        if (!uniqueMembersMap.has(member.name)) {
+          uniqueMembersMap.set(member.name, member);
+        }
+      }
+      const uniqueMembers = Array.from(uniqueMembersMap.values());
+
+      const teamMembers = getRandomItems(uniqueMembers, 3);
       res.json(teamMembers);
     } catch (parseErr) {
       console.error('Error parsing members.json:', parseErr);
@@ -78,6 +87,7 @@ app.get('/api/randommembers', (req, res) => {
     }
   });
 });
+
 
 
 

@@ -106,6 +106,7 @@ function Home() {
                 hoverImage={`/memberPics/${m.hoverImage || m.image}`} // fallback if hoverImage not provided
                 name={m.name}
                 age={m.age}
+                memberfrom={m.memberfrom}
                 collage={m.college}
                 description={m.accomplishments}
                 contact={m.contact}
