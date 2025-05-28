@@ -7,7 +7,7 @@ const Gallery = () => {
 
   useEffect(() => {
     const backendURL = process.env.REACT_APP_BACKEND_URL;
-    console.log(backendURL);
+    //console.log(backendURL);
 
     fetch(`${backendURL}/api/gallery`)
       .then(res => res.json())

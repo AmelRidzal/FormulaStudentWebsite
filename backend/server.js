@@ -37,6 +37,7 @@ app.get('/api/gallery', (req, res) => {
   });
 });
 
+
 // API to serve filtered team members
 app.get('/api/subteam/:team', (req, res) => {
   const team = req.params.team;
@@ -54,6 +55,29 @@ app.get('/api/subteam/:team', (req, res) => {
   });
 });
 
+
+// API random team members
+app.get('/api/randommembers', (req, res) => {
+  const membersFilePath = path.join(__dirname, 'public/subteams', 'members.json');
+
+  fs.readFile(membersFilePath, 'utf-8', (err, data) => {
+    if (err) {
+      console.error('Error reading members.json:', err);
+      return res.status(500).json({ error: 'Failed to load team data' });
+    }
+
+    try {
+      const allTeams = JSON.parse(data);
+      // Combine all member arrays into one
+      const allMembers = Object.values(allTeams).flat();
+      const teamMembers = getRandomItems(allMembers, 3);
+      res.json(teamMembers);
+    } catch (parseErr) {
+      console.error('Error parsing members.json:', parseErr);
+      res.status(500).json({ error: 'Failed to parse team data' });
+    }
+  });
+});
 
 
 
@@ -101,6 +125,17 @@ app.get('/api/newsletters/:id', (req, res) => {
     }
   });
 });
+
+
+
+
+function getRandomItems(arr, count) {
+  if (!Array.isArray(arr)) {
+    throw new TypeError("Expected an array");
+  }
+  const shuffled = [...arr].sort(() => 0.5 - Math.random());
+  return shuffled.slice(0, count);
+}
 
 
 // Start the server

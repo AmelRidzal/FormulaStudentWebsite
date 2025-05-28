@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom';
 import TeamPic from '../assets/TeamPic.jpg'
 import FormulaStudentPic from '../assets/industrial_website_png.png'
 import MainPic from '../assets/lum-silverstone-main.jpg'
-import SponsorScroll from './SponsorScroller'
 import logo from '../assets/logoNoText.png';
 
 import '../css/Default.css';
@@ -11,12 +10,23 @@ import '../css/News.css';
 import '../css/Collors.css';
 import '../css/SponsorScroller.css';
 
+import Teammembers from './TeamMemberCard.js';
+import SponsorScroll from './SponsorScroller'
+
+
 
 function Home() {
-
-
-
   const navigate = useNavigate();
+
+  const [members, setMembers] = useState([]);
+
+  useEffect(() => {
+    fetch(`${process.env.REACT_APP_BACKEND_URL}/api/randommembers`)
+    .then(res => res.json())
+    .then(data=> setMembers(data))
+  }, []);
+
+
 
   return (
     <div className="App">
@@ -44,7 +54,6 @@ function Home() {
 
           <section className="about-section">
             <div className="text-container">
-              {/*<h3 className="subtitle">Udruzenje studenata Univerziteta u Sarajevu "UNSA RT"</h3>*/}
               <h2 className="title">UNSA
                 <span className="highlight">RACING</span>
               </h2>
@@ -86,52 +95,22 @@ function Home() {
           <section id="subteams" className="subteams-section">
             <div className="text">
               <p className="subteams-subtitle">WHO WE ARE</p>
-              <h2 className="subteams-title">Meet our subteams</h2>
+              <h2 className="subteams-title">Meet our members</h2>
             </div>
 
             <div className="subteams-grid">
-              {[
-                {
-                  title: 'POWERTRAIN',
-                  icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZGSKLUE2XO9JfbO7DC8w_Z3J-nfxOW4NFuKSZSNWPNVCmSIilurcBbqrmkcUnlgag3cI&usqp=CAU',
-                  desc: 'Design and study of an introduction system with the help of computational fluid mechanics programs.',
-                  linkto: "/subteam"
-                },
-                {
-                  title: 'DRIVETRAIN',
-                  icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZGSKLUE2XO9JfbO7DC8w_Z3J-nfxOW4NFuKSZSNWPNVCmSIilurcBbqrmkcUnlgag3cI&usqp=CAU',
-                  desc: 'Responsible for all the mechanisms and components used to transmit power from the engine to the driving axle.',
-                  linkto: "/subteam"
-                },
-                {
-                  title: 'SUSPENSION',
-                  icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZGSKLUE2XO9JfbO7DC8w_Z3J-nfxOW4NFuKSZSNWPNVCmSIilurcBbqrmkcUnlgag3cI&usqp=CAU',
-                  desc: (
-                    <>
-                      • Maximise traction<br />
-                      • Kinematics and Dynamic analysis<br />
-                      • Steering analysis
-                    </>
-                  ),
-                  linkto: "/subteam"
-                },
-                {
-                  title: 'ELECTRONICS',
-                  icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZGSKLUE2XO9JfbO7DC8w_Z3J-nfxOW4NFuKSZSNWPNVCmSIilurcBbqrmkcUnlgag3cI&usqp=CAU',
-                  desc: 'The subgroup electronics are responsible for development of critical electronic systems in the car.',
-                  linkto: "/subteam"
-                }
-              ].map((item, idx) => (
-                <div key={idx}
-                  className="subteam-card"
-                  onClick={() => navigate(item.linkto)}
-                  style={{ cursor: "pointer" }}>
-                  <img src={item.icon} alt={item.title} className="h-12 mx-auto mb-4" />
-                  <h3 className="text-xl font-bold mb-2">{item.title}</h3>
-                  <p className="text-sm text-gray-600 mb-4">{item.desc}</p>
-                  <div className="arrow-btn">→</div>
-                </div>
-              ))}
+              {members.map((m, idx) => (
+              <Teammembers
+                key={idx}
+                image={`/memberPics/${m.image}`}
+                hoverImage={`/memberPics/${m.hoverImage || m.image}`} // fallback if hoverImage not provided
+                name={m.name}
+                age={m.age}
+                collage={m.college}
+                description={m.accomplishments}
+                contact={m.contact}
+              />
+            ))}
             </div>
           </section>
 
