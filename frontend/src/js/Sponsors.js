@@ -38,9 +38,9 @@ export default function Sponsors() {
                 </div>
                 <div id="SponsorsSupportUs">
                     <p>
-                        Tempted by this great project? Former ESTACA student? Want to help us realize our dream?
+                        Tempted by this great project? Former UNSA student? Want to help us realize our dream?
                         <br /><br /><br /><br />
-                        If you too would like to become a partner of the EFT, don’t wait and join the Formula Student adventure with us now!
+                        If you too would like to become a partner of the Unsa Racing Team, don’t wait and join the Formula Student adventure with us now!
                     </p>
                     <button id="SponsorsSupportUsBtn" onClick={handleModalOpen}>Support us</button>
                 </div>
