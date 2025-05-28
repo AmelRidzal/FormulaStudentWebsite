@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import '../css/Collors.css';
-import '../css/Pictures.css';
+import '../css/Gallery.css';
 
-const Pictures = () => {
+const Gallery = () => {
   const [images, setImages] = useState([]);
 
   useEffect(() => {
@@ -41,4 +41,4 @@ const Pictures = () => {
   );
 };
 
-export default Pictures;
+export default Gallery;

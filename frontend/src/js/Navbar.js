@@ -21,7 +21,7 @@ const Navbar = () => {
         <li><Link to="/" onClick={() => setMenuOpen(false)}>Home</Link></li>
         <li><Link to="/news" onClick={() => setMenuOpen(false)}>News</Link></li>
         <li><Link to="/subteam" onClick={() => setMenuOpen(false)}>Subteams</Link></li>
-        <li><Link to="/pics" onClick={() => setMenuOpen(false)}>Pictures</Link></li>
+        <li><Link to="/gallery" onClick={() => setMenuOpen(false)}>Pictures</Link></li>
         <li><Link to="/3dmodel" onClick={() => setMenuOpen(false)}>3D Model</Link></li>
         <li><Link to="/sponsors" onClick={() => setMenuOpen(false)}>Sponsors</Link></li>
       </ul>

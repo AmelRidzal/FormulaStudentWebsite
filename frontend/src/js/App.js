@@ -4,7 +4,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 
 import GlbViewer from './GlbViewer.js';
 import Default from './Default.js'
-import Picturs from './Picturs.js'
+import Gallery from './Gallery.js'
 import News from './News.js'
 import Sponsors from './Sponsors.js'
 import Navbar from './Navbar.js';
@@ -18,7 +18,7 @@ function App() {
       <Routes>
         <Route path="/3dmodel" element={<GlbViewer />} />
         <Route path="/" element={<Default />} />
-        <Route path="/pics" element={<Picturs />} />
+        <Route path="/gallery" element={<Gallery />} />
         <Route path="/news" element={<News />} />
         <Route path="/sponsors" element={<Sponsors />} />
         <Route path="/subteam" element={<Subteam />} />
