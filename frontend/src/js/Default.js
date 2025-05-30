@@ -69,9 +69,7 @@ function Home() {
                 enhance their problem-solving abilities, critical thinking skills, and technical expertise.
               </p>
 
-              <a href="/" className="more-link">
-                More about us →
-              </a>
+            
             </div>
             <div className="image-container">
               <img src={TeamPic} alt="slika" />
@@ -135,9 +133,6 @@ function Home() {
                 innovation to create a competitive vehicle.
               </p>
 
-              <a href="/" className="more-link" link="https://fs-alpeadria.com/">
-                More about formula student →
-              </a>
             </div>
           </section>
 

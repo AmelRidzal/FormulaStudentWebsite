@@ -66,6 +66,7 @@
     {
       "name": "Jasarevic Edis",
       "age": "23",
+      "memberfrom":"2024-present day",
       "college": "Electrotehnicki fakultet Sarajevo",
       "accomplishments": "Website design and development",
       "contact": "jasarevic03@gmail.com",
@@ -75,8 +76,9 @@
     {
       "name": "Ridzal Amel",
       "age": "23",
+      "memberfrom":"2024-present day",
       "college": "Electrotehnicki fakultet Sarajevo",
-      "accomplishments": "Website lead, design and development\nECU immo disabling\nChassie design",
+      "accomplishments": "Website design and development\nECU immo disabling\nChassie design",
       "contact": "amelridzal37@gmail.com",
       "image": "baby.jpg",
       "hoverImage": "amel.jpg"
@@ -84,6 +86,7 @@
     {
       "name": "Uzunovic Benjamin",
       "age": "23",
+      "memberfrom":"2024-present day",
       "college": "Electrotehnicki fakultet Sarajevo",
       "accomplishments": "Telemetry design and development",
       "contact": "buzunovic1@etf.unsa.ba",
@@ -113,6 +116,16 @@
       "hoverImage": ""
     },
     {
+      "name": "Imran Husremovic",
+      "age": "",
+      "memberfrom":"",
+      "college": "",
+      "accomplishments": "",
+      "contact": "",
+      "image": "baby.jpg",
+      "hoverImage": ""
+    },
+    {
       "name": "Mujic Neira",
       "age": "",
       "memberfrom":"",
@@ -131,16 +144,26 @@
       "contact": "",
       "image": "baby.jpg",
       "hoverImage": ""
+    },
+    {
+      "name": "Ziga Dzan",
+      "age": "",
+      "memberfrom":"",
+      "college": "",
+      "accomplishments": "",
+      "contact": "",
+      "image": "baby.jpg",
+      "hoverImage": ""
     }
 
   ], 
   "Suspension":[
     {
       "name": "Omerbegovic Harun",
-      "age": "",
-      "memberfrom":"",
-      "college": "",
-      "accomplishments": "Team Lead",
+      "age": "20",
+      "memberfrom":"2023",
+      "college": "Electrotehnicki fakultet Sarajevo",
+      "accomplishments": "Da",
       "contact": "",
       "image": "baby.jpg",
       "hoverImage": ""
@@ -169,7 +192,7 @@
       "hoverImage": ""
     },
     {
-      "name": "Skulj Harun",
+      "name": "Irhad Hasic",
       "age": "",
       "memberfrom":"",
       "college": "",
@@ -180,6 +203,36 @@
     },
     {
       "name": "Kozar Emin",
+      "age": "",
+      "memberfrom":"",
+      "college": "",
+      "accomplishments": "",
+      "contact": "",
+      "image": "baby.jpg",
+      "hoverImage": ""
+    },
+    {
+      "name": "Golubic Djana ",
+      "age": "",
+      "memberfrom":"",
+      "college": "",
+      "accomplishments": "",
+      "contact": "",
+      "image": "baby.jpg",
+      "hoverImage": ""
+    },
+    {
+      "name": "Kujovic Ermin",
+      "age": "",
+      "memberfrom":"",
+      "college": "",
+      "accomplishments": "",
+      "contact": "",
+      "image": "baby.jpg",
+      "hoverImage": ""
+    },
+    {
+      "name": "Niksic Lejla",
       "age": "",
       "memberfrom":"",
       "college": "",
@@ -205,14 +258,24 @@
       "name": "Jakic Zlatan",
       "age": "",
       "memberfrom":"",
-      "college": "",
-      "accomplishments": "",
+      "college": "Electrotehnicki fakultet Sarajevo",
+      "accomplishments": "NotLead harnes developer",
       "contact": "",
       "image": "baby.jpg",
       "hoverImage": ""
     },
     {
-      "name": "Vujovic Bosnjak Boris",
+      "name": "Bosnjak Vujovic Boris",
+      "age": "",
+      "memberfrom":"2024",
+      "college": "Electrotehnicki fakultet Sarajevo",
+      "accomplishments": "Lead harnes developer",
+      "contact": "borisbosnjakvujovic@unsaracing.com",
+      "image": "baby.jpg",
+      "hoverImage": ""
+    },
+    {
+      "name": "Masanovic Mak",
       "age": "",
       "memberfrom":"",
       "college": "",
@@ -222,7 +285,27 @@
       "hoverImage": ""
     },
     {
-      "name": "Masanovic Max",
+      "name": "Selimovic Rajza",
+      "age": "",
+      "memberfrom":"",
+      "college": "",
+      "accomplishments": "",
+      "contact": "",
+      "image": "baby.jpg",
+      "hoverImage": ""
+    },
+    {
+      "name": "Kavazovic Nedim",
+      "age": "",
+      "memberfrom":"",
+      "college": "",
+      "accomplishments": "",
+      "contact": "",
+      "image": "baby.jpg",
+      "hoverImage": ""
+    },
+    {
+      "name": "Pandza Zerina",
       "age": "",
       "memberfrom":"",
       "college": "",
@@ -233,6 +316,26 @@
     },
     {
       "name": "Hrbat Alem",
+      "age": "",
+      "memberfrom":"",
+      "college": "",
+      "accomplishments": "",
+      "contact": "",
+      "image": "baby.jpg",
+      "hoverImage": ""
+    },
+    {
+      "name": "Alagic Azra",
+      "age": "",
+      "memberfrom":"",
+      "college": "",
+      "accomplishments": "",
+      "contact": "",
+      "image": "baby.jpg",
+      "hoverImage": ""
+    },
+    {
+      "name": "Hodzic Haris",
       "age": "",
       "memberfrom":"",
       "college": "",
@@ -253,6 +356,36 @@
     },
     {
       "name": "Agic Ilhana",
+      "age": "",
+      "memberfrom":"",
+      "college": "",
+      "accomplishments": "",
+      "contact": "",
+      "image": "baby.jpg",
+      "hoverImage": ""
+    },
+    {
+      "name": "Ahmespahic Admir",
+      "age": "",
+      "memberfrom":"",
+      "college": "",
+      "accomplishments": "",
+      "contact": "",
+      "image": "baby.jpg",
+      "hoverImage": ""
+    },
+    {
+      "name": "Ljubovic Burhan",
+      "age": "",
+      "memberfrom":"",
+      "college": "",
+      "accomplishments": "",
+      "contact": "",
+      "image": "baby.jpg",
+      "hoverImage": ""
+    },
+    {
+      "name": "Sabic Nedim",
       "age": "",
       "memberfrom":"",
       "college": "",
@@ -313,6 +446,36 @@
       "contact": "",
       "image": "baby.jpg",
       "hoverImage": ""
+    },
+    {
+      "name": "Adzovic Armin",
+      "age": "",
+      "memberfrom":"",
+      "college": "",
+      "accomplishments": "",
+      "contact": "",
+      "image": "baby.jpg",
+      "hoverImage": ""
+    },
+    {
+      "name": "Dzaferagic Eldin",
+      "age": "",
+      "memberfrom":"",
+      "college": "",
+      "accomplishments": "",
+      "contact": "",
+      "image": "baby.jpg",
+      "hoverImage": ""
+    },
+    {
+      "name": "Crljenkovic Fatih",
+      "age": "",
+      "memberfrom":"",
+      "college": "",
+      "accomplishments": "",
+      "contact": "",
+      "image": "baby.jpg",
+      "hoverImage": ""
     }
 
   ], 
@@ -329,10 +492,10 @@
     },
     {
       "name": "Omerbegovic Harun",
-      "age": "",
-      "memberfrom":"",
-      "college": "",
-      "accomplishments": "",
+      "age": "20",
+      "memberfrom":"2023",
+      "college": "Electrotehnicki fakultet Sarajevo",
+      "accomplishments": "Da",
       "contact": "",
       "image": "baby.jpg",
       "hoverImage": ""
