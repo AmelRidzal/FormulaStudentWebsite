@@ -103,8 +103,7 @@ export default function Sponsors() {
                 <div className="ModalOverlay" onClick={handleModalClose}>
                     <div className="ModalContent" onClick={e => e.stopPropagation()}>
                         <h2>Contact Us</h2>
-                        <p>Email: support@unsaracing.com</p>
-                        <p>Phone: +387 61 123 456</p>
+                        <p>Email: info@unsaracing.com</p>
                         <button className="ModalCloseBtn" onClick={handleModalClose}>Close</button>
                     </div>
                 </div>
