@@ -85,3 +85,63 @@ footer {
   line-height: 1.6;
   color: #222;
 }
+
+
+
+
+
+
+
+
+.newsletter-detail-gallery {
+  margin-top: 40px;
+}
+
+.newsletter-detail-gallery h3 {
+  font-size: 1.2rem;
+  color: var(--logo-blue);
+  margin-bottom: 15px;
+}
+
+.newsletter-gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.newsletter-gallery-image {
+  width: 480px;
+  object-fit: cover;
+  border-radius: 6px;
+  transition: transform 0.2s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.newsletter-gallery-image:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+/* Make the entire NewsCard clickable */
+.update-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: transform 0.2s ease;
+}
+
+.update-card-link:hover .update-card {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.update-card {
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}

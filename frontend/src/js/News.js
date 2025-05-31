@@ -26,7 +26,12 @@ function Newsletter() {
           <NewsCard
             key={index}
             id={item.id}
-            image={`${backendURL}/newsPics/${item.image}`}
+            image={
+              Array.isArray(item.image) && item.image.length > 0
+                ? `${backendURL}/newsPics/${item.image[0]}`
+                : `${backendURL}/newsPics/default.jpg`
+            }
+
             title={item.title}
             date={item.date}
             description={item.description}
