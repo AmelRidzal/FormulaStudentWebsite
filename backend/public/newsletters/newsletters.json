@@ -1,13 +1,5 @@
 [
   {
-    "id": "1",
-    "image": ["memorendum1.jpg","memorendum2.jpg"],
-    "title": "Potpisan Memorandum (i još ponešto popijeno)",
-    "date": "31.5.2025",
-    "description": "Na Maloj Jahorini se danas desilo nešto važno. I još važnije – ukusno.",
-    "content": "Danas je na Maloj Jahorini svečano potpisan memorandum. Svi ozbiljni, svi nasmiješeni, niko baš do kraja ne zna šta potpisuje – znači klasično. Fotograf je zabilježio trenutak ozbiljnosti koji je trajao otprilike koliko i dijeta na slavi. \n\nA onda... roštilj. Pivo. Rakija. I naravno – priče koje nemaju ni početak ni kraj, ali svi klimaju glavom. Šetnja oko 15:30 je zamišljena da nas malo 'očisti'... ali realno – više je bila prilika da se pohvalimo novim patikama. \n\nMala Jahorina nas je opet podsjetila da ne trebaš more da se osjećaš veliko. Tu su mirisi ćevapa, eho smijeha i ona rečenica: 'Znaš kad smo ono bili...' koja se prenosi s koljena na rakiju. \n\nAko nisi bio – čestitamo, propustio si. Ako jesi – znaš da ćemo opet. Prati miris roštilja i ne pitaj puno. Vidimo se na visini!"
-  },
-  {
     "id": "2",
     "image": ["news.jpg"],
     "title": "News from February",
@@ -40,3 +32,4 @@
     "content": "Full content for May's newsletter."
   }
 ]
+
