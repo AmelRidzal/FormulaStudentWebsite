@@ -18,13 +18,21 @@ import SponsorScroll from './SponsorScroller'
 function Home() {
   const navigate = useNavigate();
 
-  const [members, setMembers] = useState([]);
+  const [newnewsletter, setNewsletters] = useState([]);
+  const backendURL = process.env.REACT_APP_BACKEND_URL;
 
   useEffect(() => {
-    fetch(`${process.env.REACT_APP_BACKEND_URL}/api/randommembers`)
-    .then(res => res.json())
-    .then(data=> setMembers(data))
+    fetch(`${backendURL}/api/newnewsletter`)
+      .then((res) => res.json())
+      .then((data) => {
+        setNewsletters(data);
+      })
+      .catch((err) => {
+        console.error('Failed to fetch newnewsletter:', err);
+      });
   }, []);
+
+
 
 
 
@@ -69,7 +77,7 @@ function Home() {
                 enhance their problem-solving abilities, critical thinking skills, and technical expertise.
               </p>
 
-            
+
             </div>
             <div className="image-container">
               <img src={TeamPic} alt="slika" />
@@ -80,38 +88,15 @@ function Home() {
             <h2 className="section-title">Latest News</h2>
             <div className="news-cards">
               <div className="news-card">
-                <img src={logo} alt="slika" />
+                <img src={`${backendURL}/newsPics/${newnewsletter.image}`} alt="slika" />
                 <div className="news-content">
-                  <h3>UNSA Racing ima web stranicu</h3>
-                  <p>Poslije minimalnog truda dvojice clanova ekipe za web i jednog iz sasije, web stranica je napokon sprzena</p>
+                  <h3>{newnewsletter.title}</h3>
+                  <p>{newnewsletter.description}</p>
                 </div>
               </div>
             </div>
           </section>
 
-
-          <section id="subteams" className="subteams-section">
-            <div className="text">
-              <p className="subteams-subtitle">WHO WE ARE</p>
-              <h2 className="subteams-title">Meet our members</h2>
-            </div>
-
-            <div className="subteams-grid">
-              {members.map((m, idx) => (
-              <Teammembers
-                key={idx}
-                image={`/memberPics/${m.image}`}
-                hoverImage={`/memberPics/${m.hoverImage || m.image}`} // fallback if hoverImage not provided
-                name={m.name}
-                age={m.age}
-                memberfrom={m.memberfrom}
-                collage={m.college}
-                description={m.accomplishments}
-                contact={m.contact}
-              />
-            ))}
-            </div>
-          </section>
 
           <section className="about-section">
             <div className="image-container">

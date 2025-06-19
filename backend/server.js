@@ -111,6 +111,43 @@ app.get('/api/newsletters', (req, res) => {
   });
 });
 
+
+// API to serve the latest news
+app.get('/api/newnewsletter', (req, res) => {
+  const newslettersPath = path.join(__dirname, 'public/newsletters', 'newsletters.json');
+
+  fs.readFile(newslettersPath, 'utf-8', (err, data) => {
+    if (err) {
+      console.error('Error reading newsletters.json:', err);
+      return res.status(500).json({ error: 'Failed to load newsletters' });
+    }
+
+    try {
+      const newsletters = JSON.parse(data);
+
+      if (!Array.isArray(newsletters) || newsletters.length === 0) {
+        return res.status(404).json({ error: 'No newsletters found' });
+      }
+
+      // Sort by date (assuming format: DD.MM.YYYY or similar)
+      const latest = newsletters.sort((a, b) => {
+        const [d1, m1, y1] = a.date.split('.').map(Number);
+        const [d2, m2, y2] = b.date.split('.').map(Number);
+        return new Date(y2, m2 - 1, d2) - new Date(y1, m1 - 1, d1);
+      })[0];
+
+      res.json(latest);
+    } catch (parseErr) {
+      console.error('Error parsing newsletters.json:', parseErr);
+      res.status(500).json({ error: 'Invalid JSON format' });
+    }
+  });
+});
+
+
+
+
+
 // GET /api/newsletters/:id
 app.get('/api/newsletters/:id', (req, res) => {
   const { id } = req.params;
